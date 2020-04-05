@@ -34,9 +34,9 @@
 </head>
 
 <body>
-	<nav id="mainNavbar" class="navbar navbar-expand-md navbar-light fixed-top py-1">
+	<nav id="mainNav" class="navbar navbar-expand-md navbar-dark fixed-top py-1">
 		<div class=" container-fluid">
-			<a class="navbar-brand" href="#">Thao Phung</a>
+			<a class="navbar-brand" href="#">THAO PHUNG</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navLinks" aria-label="Toggle navbar " aria-controls="navLinks"
@@ -46,9 +46,9 @@
 
 			<div id="navLinks" class="collapse navbar-collapse">
 				<div class="navbar-nav mr-auto pl-3">
-					<a class="nav-item nav-link" href="#about">About</a>
-					<a class="nav-item nav-link" href="#resume">Resume</a>
-					<a class="nav-item nav-link" href="#projects">Projects</a>
+					<a class="nav-item nav-link" href="#about">ABOUT</a>
+					<a class="nav-item nav-link" href="#resume">RESUME</a>
+					<a class="nav-item nav-link" href="#projects">PROJECTS</a>
 				</div>
 			</div>
 
@@ -65,23 +65,26 @@
 				</p>
 				<div class="small_button">
 					<a href="#about" class="btn btn-outline-dark">
-						<i class="fas fa-paw"></i>About</a>
+						<i class="fas fa-paw"></i>ABOUT</a>
 					<a href="#resume" class="btn btn-outline-dark">
-						<i class="fas fa-file"></i>Resume</a>
+						<i class="fas fa-file"></i>RESUME</a>
 					<a href="#projects" class="btn btn-outline-dark">
-						<i class="fas fa-project-diagram"></i>Projects</a>
+						<i class="fas fa-project-diagram"></i>PROJECTS</a>
 				</div>
 			</div>
 	</section>
 
-	<section id="about" class="spaceBottom">
+	<section id="about" class="content">
 		<div class="container text-center text-lg-left">
-			<h2 class="titleAlign">About me</h2>
+			<h2 class="topSpace">About me</h2>
 			<div class="row">
 				<div class="col-12 col-lg-6 order-1 order-lg-2 pb-5 pb-lg-0">
+					<!-- order1: first order in flex box -->
+					<!-- order-lg-2 -> order 1 except when large then order 2 -->
 					<div id="selfie" class="scaleAnimation"></div>
 				</div>
-				<div class="col-lg-6 order-2 order-lg-1">
+				<div class="col 10 col-lg-6 order-2 order-lg-1">
+					<!-- order2: second order in flex box -->
 					<p id="description">
 						My name is Thao Phung. I am a 3rd-year student at
 						Truman State University majoring in
@@ -108,9 +111,9 @@
 			</div>
 		</div>
 	</section>
-	<section id="resume" class="spaceBottom">
+	<section id="resume" class="content">
 		<div class="container">
-			<h2 class="text-center titleAlign">Resume</h2>
+			<h2 class="text-center topSpace">Resume</h2>
 			<h3>Educations</h3>
 			<hr class="my-4" />
 			<div class="row">
@@ -129,7 +132,7 @@
 					<img src="assets/images/truman_logo.png" alt="Truman State's logo"
 						id="truman_logo" />
 				</div>
-				<div class="col-12 col-md-8">
+				<div id="coursework" class="col-12 col-md-8">
 					Relevant Coursework:
 					<ul>
 						<li>
@@ -203,9 +206,9 @@
 			</div>
 		</div>
 	</section>
-	<section id="projects" class="spaceBottom">
+	<section id="projects" class="content">
 		<div class="container">
-			<h2 class="text-center titleAlign">Projects</h2>
+			<h2 class="text-center topSpace">Projects</h2>
 			<div class="row">
 				<div class="col-12 col-lg-6">
 					<div class="card scaleAnimation">
