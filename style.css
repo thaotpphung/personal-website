@@ -1,217 +1,246 @@
 * {
-	line-height: 1.75;
+  margin: 0;
+  padding: 0;
 }
 
+html {
+  font-size: 100%;
+}
+
+/* navbar*/
+a.navbar-brand {
+  font-family: "lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #c55e77 !important;
+  /* color: white !important; */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+  /* rgb(97, 50, 19) brown */
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+#mainNavbar .nav-link:hover {
+  color: white !important;
+}
+
+/* header section */
 .jumbotron {
-	height: 100vh;
-	padding-top: 8.4rem;
-	margin-bottom: 0;
-	background: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2853&q=80);
-    background-size: cover;
-    background-position: center; 
+  height: 100vh;
+  padding-top: 8.4rem !important;
+  margin-bottom: 0 !important;
+  /* background: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2853&q=80); */
+  background-color: #f5d9d5 !important;
+  /* #cff0cc pastel green */
+  background-size: cover;
+  background-position: center;
 }
 
-.small_button{
-	font-size: 0.01rem;
+#myhr {
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.lead,html{
-	width: 100%;
-    height: 100%;
-    font-family: "Lato";
+#jobtitle {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
+.lead {
+  font-family: "Lato";
+}
+
+/* About me section */
 .titleAlign {
-	padding-top: 6rem;
-	padding-bottom: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+#about {
+  background: #e5e4e0;
+  margin-top: 0px;
 }
 
 #selfie {
-	background: url(assets/images/selfie.jpg) 50% 29% no-repeat; /* 50% 50% centers image in div */
-	width: 20rem;
-	max-width: 100%;
-	height: 20rem;
-	border-radius: 20%;
-	margin: 0 auto;
+  background: url(https://images.unsplash.com/photo-1519098901909-b1553a1190af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
 }
 
 .scaleAnimation {
-	transition: transform 1s;
+  transition: transform 1s;
 }
 
 .scaleAnimation:hover {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 #description {
-	text-align: justify;
+  text-align: justify;
 }
 
 /* Icon for contacts */
 a i {
-	font-size: 2rem;
-	/*padding: 0px;*/
-	margin-left: auto;
-    margin-right: auto;
-	/*margin: 0 3%;*/
+  font-size: 2rem;
+  /*padding: 0px;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*margin: 0 3%;*/
 }
 
 .spaceBottom {
-	padding-bottom: 8rem;
-}
-
-#about{
-	background: #e5e4e0;
-	margin-top: 0px;
+  padding-bottom: 8rem;
 }
 
 #resume {
-	 background: white;
-	/*background-color: #e5e4e0;*/
+  background: white;
+  /*background-color: #e5e4e0;*/
 }
 
 #resume .row {
-	padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 #truman_logo {
-	width: 15rem;
+  width: 15rem;
 }
 
 .card {
-	width: 100%;
-	margin: auto;
-	margin-bottom: 3rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3rem;
 }
 
 #projects {
-	background: #8ECFE7;
+  background: #8ecfe7;
 }
 #projects a {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 #projects a:hover {
-	color: black;
-	text-decoration: none;
-}
-.bg-dark {
-	background: transparent !important;
-	transition: background 0.4s;
-}
-.bg-dark.scrolled {
-	background: #343a40 !important ;
-	transition: background 0.4s;
+  color: black;
+  text-decoration: none;
 }
 
 #footer {
-	background-color: #e5e4e1;
-	height: 7.5rem;
-	padding-top: 1rem;
+  background-color: #e5e4e1;
+  height: 7.5rem;
+  padding-top: 1rem;
 }
 
 #footer div {
-	display: inline-block;
-	position: absolute;
+  display: inline-block;
+  position: absolute;
 }
 #footer div p {
-	margin: 0;
+  margin: 0;
 }
 #footer .copyright {
-	left: 3%;
+  left: 3%;
 }
 
 #footer .contacts {
-	right: 3%;
-	text-align: right;
+  right: 3%;
+  text-align: right;
 }
 
 @media only screen and (min-width: 600px) {
-	#truman_logo {
-		width: 11rem;
-	}
-	#selfie {
-		background-position-y: 35%;
-		width: 30rem;
-		height: 30rem;
-		border-radius: 50%;
-	}
+  #truman_logo {
+    width: 11rem;
+  }
+  #selfie {
+    background-position-y: 35%;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-	#truman_logo {
-		width: 13rem;
-	}
+  #truman_logo {
+    width: 13rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-	#truman_logo {
-		width: 15rem;
-	}
-	a i {
-		padding: 0px;
-		margin: 0 0.7rem;
-	}
+  #truman_logo {
+    width: 15rem;
+  }
+  a i {
+    padding: 0px;
+    margin: 0 0.7rem;
+  }
 }
 
 /* popup when clicked */
 /* Popup container */
 .popup {
-	position: relative;
-	display: inline-block;
-	cursor: pointer;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
-	visibility: hidden;
-	width: 160px;
-	background-color: #555;
-	color: #fff;
-	text-align: center;
-	border-radius: 6px;
-	padding: 8px 0;
-	position: absolute;
-	z-index: 1;
-	bottom: 125%;
-	left: 50%;
-	margin-left: -80px;
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
 }
 
 /* Popup arrow */
 .popup .popuptext::after {
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-left: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: #555 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
-	visibility: visible;
-	/* -webkit-animation: fadeIn 1s; */
-	/* animation: fadeIn 1s; */
+  visibility: visible;
+  /* -webkit-animation: fadeIn 1s; */
+  /* animation: fadeIn 1s; */
 }
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
