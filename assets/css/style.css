@@ -30,6 +30,7 @@ a.navbar-brand {
 
 .navbar.scrolled {
   background-color: rgb(222, 192, 222);
+  transition: background 1s;
 }
 
 /* header section */
@@ -70,11 +71,6 @@ a.navbar-brand {
   padding-top: 6rem;
 }
 
-#about {
-  background: #eba7ac;
-  margin-top: 0px;
-}
-
 #selfie {
   background: url(https://images.unsplash.com/photo-1519098901909-b1553a1190af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
   background-position: center;
@@ -100,19 +96,11 @@ a.navbar-brand {
 }
 
 /* Icon for contacts */
-a i {
+.icon a i {
   font-size: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#resume {
-  background: #ee959e;
-  /*background-color: #e5e4e0;*/
-}
-
-#resume .row {
-  padding-bottom: 3rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0.18rem;
 }
 
 #truman_logo {
@@ -125,9 +113,6 @@ a i {
   margin-bottom: 3rem;
 }
 
-#projects {
-  background: #e17f93;
-}
 #projects a {
   text-decoration: none;
   color: black;
@@ -138,91 +123,32 @@ a i {
 }
 
 #footer {
-  background-color: #cd5e77;
-  height: 7.5rem;
-  padding-top: 1rem;
-}
-
-#footer div {
-  display: inline-block;
-  position: absolute;
-}
-#footer div p {
-  margin: 0;
-}
-#footer .copyright {
-  left: 3%;
-}
-
-#footer .contacts {
-  right: 3%;
-  text-align: right;
-}
-
-/* popup when clicked */
-/* Popup container */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-/* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
+  height: 100%;
+  padding: 1rem;
   text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
 }
 
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+/* set background */
+#about {
+  background: #eba7ac;
 }
 
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-  /* -webkit-animation: fadeIn 1s; */
-  /* animation: fadeIn 1s; */
+#resume {
+  background: #ee959e;
+  /*background-color: #e5e4e0;*/
 }
 
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+#projects {
+  background: #e17f93;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+#footer {
+  background-color: #cd5e77;
 }
 
-/* only display these if width more than 600px */
-@media only screen and (min-width: 600px) {
+/* change elements depending on the size of the screen */
+/* only display these if width more than 540px - small width*/
+@media only screen and (min-width: 540px) {
   #truman_logo {
     width: 11rem;
   }
@@ -234,15 +160,15 @@ a i {
   }
 }
 
-/* only display these if width more than 768px */
-@media only screen and (min-width: 768px) {
+/* only display these if width more than 720px - medium width*/
+@media only screen and (min-width: 720px) {
   #truman_logo {
     width: 13rem;
   }
 }
 
-/* only display these if width more than 992px */
-@media only screen and (min-width: 992px) {
+/* only display these if width more than 992px - large width*/
+@media only screen and (min-width: 960px) {
   #truman_logo {
     width: 15rem;
   }
