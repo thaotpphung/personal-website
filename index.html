@@ -27,9 +27,7 @@
 		crossorigin="anonymous">
 
 	<!-- Google Font -->
-	<link <link
-		href="https://fonts.googleapis.com/css2?family=Gotu&family=Karla&family=Lato:ital,wght@0,300;1,300&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -57,19 +55,20 @@
 	<section id="header">
 		<div class="jumbotron">
 			<div class="container text-center">
+				<i id="name">Thao Phung</i>
 				<hr id="myhr" class="my-4" />
 				<p id="jobtitle" class="lead">
 					<!-- class lead :make a paragraph stands out, spacing -->
 					Software Engineer, Web Developer
 				</p>
-				<div class="small_button">
+				<!-- <div class="small_button">
 					<a href="#about" class="btn btn-outline-dark">
 						<i class="fas fa-paw"></i>ABOUT</a>
 					<a href="#resume" class="btn btn-outline-dark">
 						<i class="fas fa-file"></i>RESUME</a>
 					<a href="#projects" class="btn btn-outline-dark">
 						<i class="fas fa-project-diagram"></i>PROJECTS</a>
-				</div>
+				</div> -->
 			</div>
 	</section>
 
@@ -77,19 +76,19 @@
 		<div class="container text-center text-lg-left">
 			<h2 class="topSpace">About me</h2>
 			<div class="row">
-				<div class="col-12 col-lg-6 order-1 order-lg-2 pb-5 pb-lg-0">
+				<div class="col-12 col-lg-6 order-1 order-lg-1 pb-5 pb-lg-0">
 					<!-- order1: first order in flex box -->
 					<!-- order-lg-2 -> order 1 except when large then order 2 -->
 					<div id="selfie" class="scaleAnimation"></div>
 				</div>
-				<div class="col 10 col-lg-6 order-2 order-lg-1">
+				<div class="col 10 col-lg-6 order-2 order-lg-2">
 					<!-- order2: second order in flex box -->
 					<p id="description">
-						My name is Thao Phung. I am a 3rd-year student at
+						My name is Thao Phung. I am a senior at
 						Truman State University majoring in
 						<b>Computer Science</b> with a minor in
 						<b>Mathematics</b>. Currently, I am seeking
-						an internship opportunity in software
+						a job opportunity in software
 						engineering/development role that will utilize my
 						critical thinking, problem solving, and programming
 						skills. Please feel free to contact me if you want
@@ -114,48 +113,52 @@
 	<section id="resume" class="content">
 		<div class="container">
 			<h2 class="text-center topSpace">Resume</h2>
-			<h3>Educations</h3>
-			<hr class="my-4" />
-			<div class="row">
-				<div class="col-12 col-md-4">
-					<b>Truman State University, Kirksville, MO</b>
-				</div>
-				<div class="col-12 col-md-8">
-					<b>
-						Bachelor of Science in Computer Science and Data
-						Science
-					</b>
-				</div>
-				<div class="col-12 col-md-4">
-					Expected Graduation in May 2021
-					<br />
-					<img src="assets/img/truman_logo.png" alt="Truman State's logo"
-						id="truman_logo" />
-				</div>
-				<div id="coursework" class="col-12 col-md-8">
-					Relevant Coursework:
-					<ul>
-						<li>
-							Linear Algebra
-						</li>
-						<li>
-							Data Structure and Algorithms
-						</li>
-						<li>
-							Object-Oriented Programming
-						</li>
-						<li>
-							Foundations of Computer Science
-						</li>
-						<li>
-							Computer Architecture
-						</li>
-						<li>
-							System Programming
-						</li>
-					</ul>
+			<div id="education">
+				<h3>Education</h3>
+				<hr class="my-4" />
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<b>Truman State University, Kirksville, MO</b>
+					</div>
+					<div class="col-12 col-md-8">
+						<b>
+							Bachelor of Science in Computer Science and Data
+							Science
+						</b>
+					</div>
+					<div class="col-12 col-md-4">
+						Expected Graduation in May 2021
+						<br />
+						<img src="assets/img/truman_logo.png" alt="Truman State's logo"
+							id="truman_logo" />
+					</div>
+					<div id="coursework" class="col-12 col-md-8">
+						Relevant Coursework:
+						<ul>
+							<li>
+								Linear Algebra
+							</li>
+							<li>
+								Data Structure and Algorithms
+							</li>
+							<li>
+								Object-Oriented Programming
+							</li>
+							<li>
+								Foundations of Computer Science
+							</li>
+							<li>
+								Computer Architecture
+							</li>
+							<li>
+								System Programming
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
+			
+			<div id="work-experience" class="pt-5">
 			<h3>Working Experiences</h3>
 			<hr class="my-4" />
 
@@ -186,7 +189,8 @@
 					<span class="badge badge-pill badge-info">HTML/CSS/Javascript</span>
 				</div>
 			</div>
-			<div class="row">
+
+			<div class="row pt-4">
 				<div class="col-12 col-md-4">
 					<b>Truman State University, Kirksville, MO</b>
 				</div>
@@ -205,7 +209,10 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</section>
+
+
 	<section id="projects" class="content">
 		<div class="container">
 			<h2 class="text-center topSpace">Projects</h2>
