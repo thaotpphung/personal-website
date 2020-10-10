@@ -5,11 +5,68 @@
 
 html {
   font-size: 100%;
-  font-family: 'Lato', sans-serif;
+}
+
+.layer-1, svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* right: 0px;  */
+  /* bottom: 0px; */
+  /* height: 100vh; */
+  z-index: -1;
+  width:100vw;
+  height:100vh;
+  
+}
+
+.layer-2 {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: scroll;
+  z-index: 0;
+  /* height: 100vh;
+  padding: 0;
+  margin: 0; */
+}
+
+svg {
+  /* width: 100%; */
+  /* height: 100vh; */
+  /* overflow: auto; */
+}
+
+svg g {
+  mix-blend-mode: lighten;
+}
+svg polygon {
+  stroke: none;
+  fill: white;
+}
+
+#name {
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+#description {
+  font-family: lato;
+  font-size: 20px;
+  font-weight: 400;
+  /* font-style: italic */
+}
+
+.container {
+  padding: 100px 0;
 }
 
 .container-fluid {
-  padding-top: 12px !important;
+  padding: 9px;
   padding-left: 50px !important;
 }
 
@@ -47,7 +104,6 @@ a.navbar-brand {
   align-items: center;
   justify-content: center;
   height: 100vh;
-
   margin-bottom: 0 !important;
   background: url("flower.jpg");
   /* #f5d9d5  */
@@ -89,20 +145,23 @@ a.navbar-brand {
   padding-bottom: 3rem;
 }
 
-.content {
-  padding-bottom: 8rem;
-  padding-top: 6rem;
-}
-
-#selfie {
+.selfie {
   background: url("selfie.jpg");
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20%;
   margin: 0 auto;
   height: 100%;
   width: auto;
+  max-width: 100%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
   max-width: 100%;
 }
 
@@ -132,9 +191,15 @@ a.navbar-brand {
 }
 
 .card {
-  width: 100%;
+  width: 90%;
+  /* height: 500px; */
   margin: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  /* overflow: scroll; */
+  /* padding: 20px; */
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.3);
+
 }
 
 #projects a {
@@ -146,8 +211,9 @@ a.navbar-brand {
   text-decoration: none;
 }
 
+
 #footer {
-  height: 100%;
+  /* height: 100%; */
   padding: 1rem;
   text-align: center;
 }
@@ -156,13 +222,15 @@ a.navbar-brand {
 #about {
   /* background: #eba7ac; */
   /* background: white; */
-  background-color: #e5e4e0;
+  /* background-color: #e5e4e0; */
+  height: 100vh;
 }
 
 #resume {
   /* background: #ee959e; */
   /* background-color: #e5e4e0; */
-  background: #f2c9cb;
+
+  /* background: #f2c9cb; */
 
 }
 
@@ -170,13 +238,15 @@ a.navbar-brand {
   /* background: #e17f93; */
   /* background: white; */
     /* background: #eba7ac; */
-    background-color: #e5e4e0;
+
+    /* background-color: #e5e4e0; */
 }
 
 #footer {
   /* background-color: #cd5e77; */
   /* background: #f2c9cb; */
-  background: rgb(208, 167, 192);
+
+  /* background: rgb(208, 167, 192); */
 }
 
 /* change elements depending on the size of the screen */
@@ -205,4 +275,8 @@ a.navbar-brand {
   #truman_logo {
     width: 15rem;
   }
+  
+  body {
+    font-family: 'Lato', sans-serif !important;
+  }  
 }
