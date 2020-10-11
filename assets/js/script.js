@@ -1,13 +1,3 @@
-$(function () {
-	$(document).scroll(function () {
-		var $nav = $("#mainNav");
-		$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-	});
-});
-
-//////////////////////////////
-// Demo Functions
-//////////////////////////////
 
 function init(showStats) {
   // stats
@@ -354,12 +344,12 @@ var gradients = (function () {
     // "#fe8500", // orange30
     // "#fe6100", // peach40
     // "#e62325", // red50
-    // "#dc267f", // magenta50
+    // "#dc267f", // magenta50 - strong pink
     // "#c22dd5", // purple50
     // "#9753e1", // violet50
-    // "#5a3ec8" // indigo60
-    // "#FFB6C1",
-    "#df7cad",
+    // "#5a3ec8", // indigo60
+    // "#FFB6C1"
+    "#df7cad", // pink
     // "#ab75d2"
   ];
 

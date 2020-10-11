@@ -35,25 +35,6 @@
 </head>
 
 <body>
-	<nav id="mainNav" class="navbar navbar-expand-md navbar-dark fixed-top py-1">
-		<div class=" container-fluid">
-			<a class="navbar-brand" href="#">THAO PHUNG</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks"
-				aria-label="Toggle navbar " aria-controls="navLinks" aria-expanded="false">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div id="navLinks" class="collapse navbar-collapse">
-				<div class="navbar-nav mr-auto pl-3">
-					<a class="nav-item nav-link" href="#about">ABOUT</a>
-					<a class="nav-item nav-link" href="#resume">RESUME</a>
-					<a class="nav-item nav-link" href="#projects">PROJECTS</a>
-				</div>
-			</div>
-		</div>
-	</nav>
-
-
 	<div class="layer-1">
 		<svg id="demo" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
 			<defs>
@@ -74,27 +55,33 @@
 		</svg>
 	</div>
 
-	<!-- <div class="layer-2"> -->
-	<!-- <section id="header"> -->
-	<!-- <div class="jumbotron"> -->
-	<!-- <div class="container text-center">
-				<i id="name">Thao Phung</i>
-				<hr id="myhr" class="my-4" />
-				<p id="jobtitle" class="lead">
-					Software Engineer, Web Developer
-				</p>
-			</div> -->
-	<!-- </div> -->
-	<!-- </section> -->
-	<!-- </div> -->
-
 	<div class="layer-2">
+		<nav class="navbar navbar-light fixed-top navbar-expand-lg">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="navbar10">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#about">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#education">EDUCATION</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#experience">EXPERIENCE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects">PROJECTS</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-	<section id="about">
-		<div class="container text-center">
-			<div>
-				<div class="selfie scaleAnimation">
-				</div>
+		<!-- <div class="body-container"> -->
+		<section id="about">
+			<div class="text-center">
+				<div class="selfie scaleAnimation"></div>
 				<p id="name" class="lead">
 					THAO PHUNG
 				</p>
@@ -103,14 +90,12 @@
 							class="fab fa-facebook-square"></i></a>
 					<a href="https://www.linkedin.com/in/thao-phung-02b882152/" target="_blank"><i
 							class="fab fa-linkedin"></i></a>
-					<!-- <i class="fab fa-github-alt"></i></a> -->
 					<a href="https://github.com/thaophung12"> <i class="fab fa-github-alt"></i></a>
-					<a href="mailto:thaopphung1204@gmail.com" target="_top"><i
-							class="fas fa-envelope"></i></a>
+					<a href="mailto:thao.tp.phung@gmail.com" target="_top"><i class="fas fa-envelope"></i></a>
 				</div>
-				<div class="row justify-content-center">
-					<div class="col 10 col-lg-6 order-2 order-lg-2">
-						<p id="description">
+				<div class="row justify-content-center pt-3">
+					<div class="col-10 col-md-7">
+						<div id="description" class="custom-card">
 							I am a senior at
 							Truman State University majoring in
 							<b>Computer Science</b> with a minor in
@@ -120,221 +105,278 @@
 							critical thinking, problem solving, and programming
 							skills. Please feel free to contact me if you want
 							to reach out or have any questions.
-						</p>
+						</div>
 					</div>
 				</div>
-	</section>
+			</div>
+		</section>
 
-	<section id="resume" class="content">
-		<div class="container">
-			<h2 class="text-center topSpace">Resume</h2>
-			<div id="education">
-				<h3>Education</h3>
-				<hr class="my-4" />
-				<div class="row">
-					<div class="col-12 col-md-4">
+		<section id="education">
+			<div class="container col-10 col-lg-9 py-5">
+				<h2 class="text-center pb-4 section-title">Education</h2>
+				<div class="row custom-card">
+					<div class="col-12 col-md-4 text-center">
 						<b>Truman State University, Kirksville, MO</b>
-					</div>
-					<div class="col-12 col-md-8">
-						<b>
-							Bachelor of Science in Computer Science and Data
-							Science
-						</b>
-					</div>
-					<div class="col-12 col-md-4">
-						Expected Graduation in May 2021
-						<br />
+						<div class="pb-3">Expected Graduction in May 2021</div>
 						<a href="https://www.truman.edu/">
 							<img src="assets/img/truman_logo.png" alt="Truman State's logo" id="truman_logo"
-								class="scaleAnimation pt-3" />
+								class="scaleAnimation" />
 						</a>
 					</div>
-					<div id="coursework" class="col-12 col-md-8">
-						Relevant Coursework:
-						<ul>
-							<li>
-								Linear Algebra
-							</li>
-							<li>
-								Data Structure and Algorithms
-							</li>
-							<li>
-								Object-Oriented Programming
-							</li>
-							<li>
-								Foundations of Computer Science
-							</li>
-							<li>
-								Computer Architecture
-							</li>
-							<li>
-								System Programming
-							</li>
-						</ul>
+					<div class="col-12 col-md-8 pt-3 pt-md-0">
+						<b>Bachelor of Science in Computer Science and Minor in Mathematics</b>
+						<div>Relevant Coursework:</div>
+
+						<div id="coursework" class="row">
+							<div class="col-12 col-lg-7">
+								<ul>
+									<li>
+										Foundation of Computer Science I & II
+							<span class="badge badge-pill badge-info">Ada</span>
+							<span class="badge badge-pill badge-info">Java</span>
+									</li>
+									<li>
+										Computing Structures 
+							<span class="badge badge-pill badge-info">Prolog</span>
+									</li>
+									<li>
+										Systems Programming 
+							<span class="badge badge-pill badge-info">C</span>
+							<span class="badge badge-pill badge-info">C++</span>
+									</li>
+									<li>
+										ComputerArchitecture and Organization 
+							<span class="badge badge-pill badge-info">MIPS</span>
+									</li>
+									<li>
+										Internet Programming
+							<span class="badge badge-pill badge-info">PHP</span>
+							<span class="badge badge-pill badge-info">mySQL</span>
+									</li>
+									<li>
+										Ordinary Differential Equation 
+									</li>
+								</ul>
+							</div>
+							<div class="col-12 col-lg-5">
+								<ul>
+									<li>
+										Linear Algebra 
+							<span class="badge badge-pill badge-info">Latex</span>
+									</li>
+									<li>
+										Object-Oriented 
+							<span class="badge badge-pill badge-info">Java</span>
+									</li>
+									<li>
+										Data Structure and Algorithms
+							<span class="badge badge-pill badge-info">C++</span>
+									</li>
+									
+									<li>
+										ComputerNetworks 
+							<span class="badge badge-pill badge-info">Java</span>
+									</li>
+									<li>
+										Artificial Intelligence 
+							<span class="badge badge-pill badge-info">Python</span>
+									</li>
+									<li>
+										Software Engineering (In Progress)
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+		</section>
 
-			<div id="work-experience" class="pt-5">
-				<h3>Working Experiences</h3>
-				<hr class="my-4" />
+		<section id="experience">
+			<div class="container col-10 col-lg-9 py-5">
+				<h2 class="text-center pb-4 section-title">Work Experience</h2>
+				<div class="row custom-card">
+					<div class="col-12 col-md-3 text-center pb-3 pb-md-0">
+						<a href="https://www.truman.edu/">
+							<img src="assets/img/truman_logo.png" alt="Truman State's logo" id="truman_logo"
+								class="scaleAnimation" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3">
+						<b>Truman State University</b>
+						<div><i class="fas fa-map-marker-alt"></i> Kirksville, MO</div>
+						<div class="pb-3"><i class="fas fa-calendar-alt"></i> August 2019 - December 2019</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<b>Calculus Tutor</b>
+						<div>
+							<ul>
+								<li>
+									Provided assistance for students to tackle Calculus
+									problems
+								</li>
+								<li>
+									Worked with two other tutors to design a preparation test for all exams
+								</li>
+							</ul>
+							<span class="badge badge-pill badge-info">Latex</span>
+						</div>
+					</div>
+				</div>
 
+				<div class="row custom-card mt-4">
+					<div class="col-12 col-md-3 text-center pb-3 pb-md-0">
+						<a href="https://www.fpt-software.com/">
+							<img src="assets/img/fpt_logo.png" alt="FPT Software Vietnam's logo" id="fpt_logo"
+								class="scaleAnimation" />
+						</a>
+					</div>
+					<div class="col-12 col-md-3">
+						<b>FPT Software</b>
+						<div><i class="fas fa-map-marker-alt"></i> Hanoi, VN</div>
+						<div class="pb-3"><i class="fas fa-calendar-alt"></i> June 2019 - August 2019</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<b>Java Intern</b>
+						<div>
+							<ul>
+								<li>
+									Sharpened Java programming, front-end web
+									development, and SQL skills through an
+									intensive training program.
+								</li>
+								<li>
+									Led team of four. tracked progress, finalized
+									projects, and submitted the final products to
+									project manager.
+								</li>
+							</ul>
+							<span class="badge badge-pill badge-info">Java Core</span>
+							<span class="badge badge-pill badge-info">SQL</span>
+							<span class="badge badge-pill badge-info">JDBC</span>
+							<span class="badge badge-pill badge-info">HTML/CSS/Javascript</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<section id="projects">
+			<div class="container py-5">
+				<h2 class="text-center pb-5 section-title">Projects</h2>
 				<div class="row">
-					<div class="col-12 col-md-4">
-						<b>FPT Software, Hanoi, VN</b>
+					<div class="col-12 col-lg-6">
+						<div class="card scaleAnimation">
+							<a href="https://github.com/thaotpphung/stockapp" target="_blank">
+								<img src="assets/img/stock.gif" class="card-img" alt="StockOverflow" />
+								<div class="card-body">
+									<h5 class="card-title">StockOverflow</h5>
+									<p class="card-text">
+										A RESTful web application using Node.js/Express to track and visualize stock
+										data,
+										manage stockportfolio and alert user of changes in stock prices.
+										Employed Bootstrap4 and JQuery for building the frontend, generated stock
+										graphs
+										via Chart.js and anychart.js libraries. Obtained stock data through financial
+										API.
+										Cached data in MongoDB database for optimization. Hosted on Heroku platform
+									</p>
+									<hr />
+									<span class="badge badge-pill badge-info">HTML</span>
+									<span class="badge badge-pill badge-info">CSS</span>
+									<span class="badge badge-pill badge-info">Javascript</span>
+									<span class="badge badge-pill badge-info">Nodejs</span>
+									<span class="badge badge-pill badge-info">Express</span>
+									<span class="badge badge-pill badge-info">MongoDB</span>
+									<span class="badge badge-pill badge-info">Bootstrap4</span>
+									<span class="badge badge-pill badge-info">jQuery</span>
+									<span class="badge badge-pill badge-info">Heroku</span>
+									<span class="badge badge-pill badge-info">REST API</span>
+								</div>
+							</a>
+						</div>
 					</div>
-					<div class="col-12 col-md-8">
-						<b>Java Trainee</b>
-					</div>
-					<div class="col-12 col-md-4">Jun 2018</div>
-					<div class="col-12 col-md-8">
-						<ul>
-							<li>
-								Sharpened Java programming, front-end web
-								development, and SQL skills through an
-								intensive training program.
-							</li>
-							<li>
-								Led team of four. tracked progress, finalized
-								projects, and submitted the final products to
-								project manager.
-							</li>
-						</ul>
-						<span class="badge badge-pill badge-info">Java Core</span>
-						<span class="badge badge-pill badge-info">SQL</span>
-						<span class="badge badge-pill badge-info">JDBC</span>
-						<span class="badge badge-pill badge-info">HTML/CSS/Javascript</span>
-					</div>
-				</div>
 
-				<div class="row pt-4">
-					<div class="col-12 col-md-4">
-						<b>Truman State University, Kirksville, MO</b>
+					<div class="col-12 col-lg-6">
+						<div class="card scaleAnimation">
+							<a href="https://github.com/thaotpphung/HAC" target="_blank">
+								<img src="assets/img/hac.png" class="card-img" alt="High Availability Cluster" />
+								<div class="card-body">
+									<h5 class="card-title">High Availability Cluster</h5>
+									<p class="card-text">
+										An application layer protocol over UDP to facilitate High Availability
+										Cluster(HAC), the functions of which include determining node status
+										periodically
+										and inform its availability other nodes in the network. Implemented in two
+										modes:
+										Peer-to-Peer and Client-Server
+									</p>
+									<hr />
+									<span class="badge badge-pill badge-info">Java UDP</span>
+									<span class="badge badge-pill badge-info">Git</span>
+								</div>
+							</a>
+						</div>
 					</div>
-					<div class="col-12 col-md-8">
-						<b>Calculus I,II,III Tutor</b>
+
+					<div class="col-12 col-lg-6">
+						<div class="card scaleAnimation">
+							<a href="https://github.com/thaotpphung/directory-synchronization-tool"
+								target="_blank">
+								<img src="assets/img/sync.png" class="card-img"
+									alt="Directory Synchronization Tool"/>
+								<div class="card-body">
+									<h5 class="card-title">Multi-thread Synchronization Application</h5>
+									<p class="card-text">
+										A multithreading document management tool that synchronizes directories and
+										files
+										between multiplemachines
+									</p>
+									<hr />
+									<span class="badge badge-pill badge-info">Java TCP</span>
+									<span class="badge badge-pill badge-info">Git</span>
+								</div>
+							</a>
+						</div>
 					</div>
-					<div class="col-12 col-md-4">Aug-Dec 2018</div>
-					<div class="col-12 col-md-8">
-						<ul>
-							<li>
-								Provided assistance for students to tackle Calculus
-								problems
-							</li>
-						</ul>
-						<span class="badge badge-pill badge-info">Latex</span>
+					<div class="col-12 col-lg-6">
+						<div class="card scaleAnimation">
+							<a href="https://github.com/thaotpphung/directory-synchronization-tool"
+								target="_blank">
+								<img src="assets/img/gomoku.png" class="card-img" alt="Gomoku" />
+								<div class="card-body">
+									<h5 class="card-title">Gomoku</h5>
+									<p class="card-text">
+										An AI that played the strategy board game Gomoku with the user, which utilizes
+										Minimax approach with Alphabeta pruning for optimization
+									</p>
+									<hr />
+									<span class="badge badge-pill badge-info">Python</span>
+									<span class="badge badge-pill badge-info">Git</span>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
+		</section>
+
+		<section id="footer">
+			<h6 class="mb-0">&copy; Thao Phung 2019</h6>
+			<div class="icon">
+				<a href="https://www.facebook.com/thaophuong10498" target="_blank"><i
+						class="fab fa-facebook-square"></i></a>
+				<a href="https://www.linkedin.com/in/thao-phung-02b882152/" target="_blank"><i
+						class="fab fa-linkedin"></i></a>
+				<a href="https://github.com/thaophung12"> <i class="fab fa-github-alt"></i></a>
+				<a href="mailto:thaopphung1204@gmail.com" target="_top"><i class="fas fa-envelope"></i></a>
 			</div>
-		</div>
-	</section>
+		</section>
 
+	</div>
 
-	<section id="projects" class="content">
-		<div class="container">
-			<h2 class="text-center topSpace">Projects</h2>
-			<div class="row">
-
-				<div class="col-12 col-lg-6">
-					<div class="card scaleAnimation">
-						<a href="https://github.com/thaotpphung/stockapp" target="_blank">
-							<img src="assets/img/stock.gif" class="card-img-top" alt="StockOverflow" />
-							<div class="card-body">
-								<h5 class="card-title">StockOverflow</h5>
-								<p class="card-text">
-									A RESTful web application using Node.js/Express to track and visualize stock data,
-									manage stockportfolio and alert user of changes in stock prices.
-									Employed Bootstrap4 and JQuery for building the frontend, generated stock graphs
-									via Chart.js and anychart.js libraries. Obtained stock data through financial API.
-									Cached data in MongoDB database for optimization.◦Hosted on Heroku platform
-								</p>
-								<hr />
-								<span class="badge badge-pill badge-info">TCP
-									Class</span>
-								<span class="badge badge-pill badge-info">Java</span>
-								<span class="badge badge-pill badge-info">Git</span>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-12 col-lg-6">
-					<div class="card scaleAnimation">
-						<a href="https://github.com/thaotpphung/HAC" target="_blank">
-							<img src="assets/img/hac.png" class="card-img-top" alt="High Availability Cluster" />
-							<div class="card-body">
-								<h5 class="card-title">High Availability Cluster</h5>
-								<p class="card-text">
-									Created an application layer protocol over UDP to facilitate High Availability
-									Cluster(HAC), the functions of which include determining node status periodically
-									and inform its availability other nodes in the network. Impletmented in two modes:
-									Peer-to-Peer and Client-Server
-								</p>
-								<hr />
-								<span class="badge badge-pill badge-info">TCP
-									Class</span>
-								<span class="badge badge-pill badge-info">Java UDP</span>
-								<span class="badge badge-pill badge-info">Git</span>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-12 col-lg-6">
-					<div class="card scaleAnimation">
-						<a href="https://github.com/thaotpphung/directory-synchronization-tool" target="_blank">
-							<img src="assets/img/sync.png" class="card-img-top"
-								alt="Directory Synchronization Tool" />
-							<div class="card-body">
-								<h5 class="card-title">Multi-thread Synchronization Application</h5>
-								<p class="card-text">
-									A multithreading document management tool that synchronizes directories and files
-									between multiplemachines
-								</p>
-								<hr />
-								<span class="badge badge-pill badge-info">TCP
-									Class</span>
-								<span class="badge badge-pill badge-info">Java TCP</span>
-								<span class="badge badge-pill badge-info">Git</span>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-12 col-lg-6">
-					<div class="card scaleAnimation">
-						<a href="https://github.com/thaotpphung/directory-synchronization-tool" target="_blank">
-							<img src="assets/img/gomoku.png" class="card-img-top" alt="Gomoku" />
-							<div class="card-body">
-								<h5 class="card-title">Gomoku</h5>
-								<p class="card-text">
-									An AI that played the strategy board game Gomoku with the user, which utilizes
-									Minimax approach with Alphabeta pruning for optimization
-								</p>
-								<hr />
-								<span class="badge badge-pill badge-info">Python</span>
-								<span class="badge badge-pill badge-info">Git</span>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-	</section>
-	<section id="footer">
-		<h6 class="mb-0">&copy; Thao Phung 2019</h6>
-		<div class="icon">
-			<a href="https://www.facebook.com/thaophuong10498" target="_blank"><i
-					class="fab fa-facebook-square"></i></a>
-			<a href="https://www.linkedin.com/in/thao-phung-02b882152/" target="_blank"><i
-					class="fab fa-linkedin"></i></a>
-			<a href="https://github.com/thaotpphung"><i class="fab fa-github-square"></i></a>
-			<a href="mailto:thaopphung1204@gmail.com" target="_top"><i class="fas fa-envelope"></i></a>
-		</div>
-	</section>
-
-</div>
-
-
+	<!-- Script for effects -->
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js'></script>
 
@@ -349,6 +391,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
 		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		crossorigin="anonymous"></script>
+
+
 	<!-- local javascript file -->
 	<script src="assets/js/script.js"></script>
 </body>

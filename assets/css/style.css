@@ -7,46 +7,80 @@ html {
   font-size: 100%;
 }
 
-.layer-1, svg {
+.layer-1,
+svg {
   position: absolute;
   top: 0px;
   left: 0px;
-  /* right: 0px;  */
-  /* bottom: 0px; */
-  /* height: 100vh; */
   z-index: -1;
-  width:100vw;
-  height:100vh;
-  
+  width: 100vw;
+  height: 100vh;
 }
 
 .layer-2 {
-  position:absolute;
+  position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   bottom: 0px;
-  overflow: scroll;
   z-index: 0;
-  /* height: 100vh;
-  padding: 0;
-  margin: 0; */
-}
-
-svg {
-  /* width: 100%; */
-  /* height: 100vh; */
-  /* overflow: auto; */
+  overflow: scroll;
 }
 
 svg g {
   mix-blend-mode: lighten;
 }
+
 svg polygon {
   stroke: none;
   fill: white;
 }
 
+/* Shared */
+.icon a i {
+  font-size: 2rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0.18rem;
+}
+.scaleAnimation {
+  transition: transform 1s;
+}
+
+.scaleAnimation:hover {
+  transform: scale(1.05);
+}
+
+.custom-card {
+  /* text-align: center; */
+  padding: 20px 30px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* navbar*/
+.navbar {
+  background-color: rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.navbar-nav .nav-link{
+  color: black !important;
+}
+
+
+.navbar-nav .nav-link:hover {
+  color: #c55e77 !important;
+}
+
+.navbar.scrolled {
+  background-color: rgb(208, 167, 192);
+  transition: background 1s;
+}
+
+/* About */
 #name {
   padding-top: 30px;
   font-size: 30px;
@@ -58,103 +92,11 @@ svg polygon {
   font-family: lato;
   font-size: 20px;
   font-weight: 400;
-  /* font-style: italic */
-}
-
-.container {
-  padding: 100px 0;
-}
-
-.container-fluid {
-  padding: 9px;
-  padding-left: 50px !important;
-}
-
-/* navbar*/
-a.navbar-brand {
-  font-family: "lato", sans-serif;
-  font-weight: bold;
-  font-size: 1.7rem;
-  color: #c55e77 !important;
-  /* color: white !important; */
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: white !important;
-  /* rgb(97, 50, 19) brown */
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  font-size: 1.1rem !important;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  /* color:red; */
-  color: #c55e77 !important;
-}
-
-.navbar.scrolled {
-  /* background-color: rgb(222, 192, 222); */
-  background-color: rgb(208, 167, 192);
-  transition: background 1s;
-}
-
-/* header section */
-.jumbotron {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin-bottom: 0 !important;
-  background: url("flower.jpg");
-  /* #f5d9d5  */
-  /* #cff0cc pastel green */
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
-  background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
-
-.jumbotron #name {
-  /* color: white; */
-  font-size: 50px;
-  text-shadow: 0px 4px 3px rgba(247, 162, 237, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
-}
-
-#myhr {
-  border-top: 1px solid #f8f8f8;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-#jobtitle {
-  text-shadow: 0px 4px 3px rgba(247, 162, 237, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
-  /* text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1); */
-}
-
-.lead {
-  font-family: "Lato";
-  /* color: #f498b8;  */
-}
-
-/* About me section */
-.topSpace {
-  padding-bottom: 3rem;
+  text-align: justify;
 }
 
 .selfie {
   background: url("selfie.jpg");
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 20%;
-  margin: 0 auto;
-  height: 100%;
-  width: auto;
-  max-width: 100%; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,41 +107,40 @@ a.navbar-brand {
   max-width: 100%;
 }
 
-.scaleAnimation {
-  transition: transform 1s;
+#about {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
 
-.scaleAnimation:hover {
-  transform: scale(1.05);
-}
-
-#description {
-  text-align: justify;
-}
-
-/* Icon for contacts */
-.icon a i {
-  font-size: 2rem;
-  line-height: 2;
-  color: rgba(0, 0, 0, 0.8);
-  padding: 0.18rem;
-}
-
-
+/* Education */
 #truman_logo {
-  width: 15rem;
+  width: 8rem;
 }
 
+#fpt_logo {
+  width: 11rem;
+}
+
+/* Projects */
 .card {
   width: 90%;
-  /* height: 500px; */
   margin: auto;
   margin-bottom: 4rem;
-  /* overflow: scroll; */
-  /* padding: 20px; */
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.3);
+}
 
+.card-img {
+  height: 16rem;
+}
+
+.card-title {
+  font-weight: bold;
 }
 
 #projects a {
@@ -211,47 +152,15 @@ a.navbar-brand {
   text-decoration: none;
 }
 
-
+/* Footer */
 #footer {
-  /* height: 100%; */
   padding: 1rem;
   text-align: center;
 }
 
-/* set background */
-#about {
-  /* background: #eba7ac; */
-  /* background: white; */
-  /* background-color: #e5e4e0; */
-  height: 100vh;
-}
-
-#resume {
-  /* background: #ee959e; */
-  /* background-color: #e5e4e0; */
-
-  /* background: #f2c9cb; */
-
-}
-
-#projects {
-  /* background: #e17f93; */
-  /* background: white; */
-    /* background: #eba7ac; */
-
-    /* background-color: #e5e4e0; */
-}
-
-#footer {
-  /* background-color: #cd5e77; */
-  /* background: #f2c9cb; */
-
-  /* background: rgb(208, 167, 192); */
-}
-
 /* change elements depending on the size of the screen */
 /* only display these if width more than 540px - small width*/
-@media only screen and (min-width: 540px) {
+/* @media only screen and (min-width: 540px) {
   #truman_logo {
     width: 11rem;
   }
@@ -261,22 +170,22 @@ a.navbar-brand {
     height: 30rem;
     border-radius: 50%;
   }
-}
+} */
 
 /* only display these if width more than 720px - medium width*/
-@media only screen and (min-width: 720px) {
+/* @media only screen and (min-width: 720px) {
   #truman_logo {
     width: 13rem;
   }
-}
+} */
 
 /* only display these if width more than 992px - large width*/
-@media only screen and (min-width: 960px) {
+/* @media only screen and (min-width: 960px) {
   #truman_logo {
     width: 15rem;
   }
-  
-  body {
-    font-family: 'Lato', sans-serif !important;
-  }  
+} */
+
+body {
+  font-family: "Lato", sans-serif !important;
 }
