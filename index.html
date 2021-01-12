@@ -32,6 +32,8 @@
 
 	<!-- local css file -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/slider.css" />
+
 </head>
 
 <body>
@@ -78,45 +80,12 @@
 			</div>
 		</nav>
 
-		
-		
-		<!-- <div class="card popup-card">
-			<div class="card-header">
-				Override Tracker 
-			</div>
-			<div class="card-body">
-				<h5 class="card-title">A web-based system to track class override requests for 3 Truman departments</h5>
-				<ul style="padding: 0 20px;">
-					<li>Improved the manual processing of requests using Gmail and Excel by designing a user-friendly web interface, ex-pected to reduce human effort by 80%.</li>
-					<li>Responsible for gathering client’s requirements and developing frontend prototypes.</li>
-					<li>Collaborated with the backend team to design RESTful routes and MySQL tables</li>
-					<li>Employed MVC architecture in an agile environment.</li>
-				</ul>
-				
-				<span class="badge badge-pill badge-info">Node.js - Express.js</span>
-				<span class="badge badge-pill badge-info">MySQL</span>
-				<span class="badge badge-pill badge-info">Sequelize</span>
-				<span class="badge badge-pill badge-info">OAuth2</span>
-				
-				<span class="badge badge-pill badge-info">EJS</span>
-				<span class="badge badge-pill badge-info">Bootstrap4</span>
-				<span class="badge badge-pill badge-info">jQuery</span>
-				<span class="badge badge-pill badge-info">RESTful Routing</span>
-			</div>
-			<div class="card-footer text-muted">
-				<div class="float-right">
-					<a href="#" class="btn btn-primary">Github</a>
-					<a href="#" class="btn btn-dark">Close</a>
-				</div>
-			</div>
-		</div> -->
-
 		<!-- <div class="body-container"> -->
 		<section id="about">
 
 			<div class="text-center">
 				<div class="selfie scale-animation"></div>
-				<p id="name" class="lead">
+				<p class="name">
 					THAO PHUNG
 				</p>
 				<div class="icon">
@@ -129,7 +98,7 @@
 				</div>
 				<div class="row justify-content-center pt-3">
 					<div class="col-10 col-md-6">
-						<div id="description" class="custom-card">
+						<div class="description custom-card">
 							I am a senior at
 							Truman State University majoring in
 							<b>Computer Science</b> with a minor in
@@ -153,7 +122,7 @@
 						<b>Truman State University, Kirksville, MO</b>
 						<div class="pb-3">Expected Graduction in May 2021</div>
 						<a href="https://www.truman.edu/">
-							<img src="assets/img/truman_logo.png" alt="Truman State's logo" id="truman_logo"
+							<img class="job-logo" src="assets/img/truman_logo.png" alt="Truman State's logo" id="truman_logo"
 								class="scale-animation" />
 						</a>
 					</div>
@@ -232,7 +201,7 @@
 				<div class="row custom-card">
 					<div class="col-12 col-md-3 text-center pb-3 pb-md-0">
 						<a href="https://www.truman.edu/">
-							<img src="assets/img/truman_logo.png" alt="Truman State's logo" id="truman_logo"
+							<img class="job-logo" src="assets/img/truman_logo.png" alt="Truman State's logo" id="truman_logo"
 								class="scale-animation" />
 						</a>
 					</div>
@@ -261,7 +230,7 @@
 				<div class="row custom-card mt-4">
 					<div class="col-12 col-md-3 text-center pb-3 pb-md-0">
 						<a href="https://www.fpt-software.com/">
-							<img src="assets/img/fpt_logo.png" alt="FPT Software Vietnam's logo" id="fpt_logo"
+							<img class="job-logo" src="assets/img/fpt_logo.png" alt="FPT Software Vietnam's logo" id="fpt_logo"
 								class="scale-animation" />
 						</a>
 					</div>
@@ -304,7 +273,7 @@
 				<div class="row">
 
 					<div class="col-12 col-lg-10 col-centered">
-						<div class="CSSgal">
+						<div class="slider-container">
 
 							<!-- Don't wrap targets in parent -->
 							<s id="s1"></s> 
@@ -462,7 +431,7 @@
 					</div>
 
 					<div id="popup2" class="overlay">
-						<div class="popup">
+						<div class="popup col-12 col-md-9 col-lg-6 col-centered">
 							<div class="card popup-card">
 								<div class="card-header">
 									Override Tracker 2
@@ -497,7 +466,7 @@
 					</div>
 
 					<div id="popup3" class="overlay">
-						<div class="popup">
+						<div class="popup col-12 col-md-9 col-lg-6 col-centered">
 							<div class="card popup-card">
 								<div class="card-header">
 									Override Tracker 3
@@ -532,7 +501,7 @@
 					</div>
 
 					<div id="popup4" class="overlay">
-						<div class="popup">
+						<div class="popup col-12 col-md-9 col-lg-6 col-centered">
 							<div class="card popup-card">
 								<div class="card-header">
 									Override Tracker 4
