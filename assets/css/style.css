@@ -348,12 +348,12 @@ a:hover {
 	text-decoration: none;
 }
 
-
-
-/* popup card */
+/* -------------popup card------------- */
 .popup-card {
-  width: 70% !important; 
+  border-radius: 5px;
   background-color: white !important;
+  max-height: 700px;
+  overflow: scroll;
 }
 
 .overlay {
@@ -373,39 +373,20 @@ a:hover {
   opacity: 1;
 }
 
+.col-centered{
+  float: none;
+  margin: auto;
+  
+}
+
 .popup {
-  /* margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%; */
-  position: relative;
+  /* position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);  */
+
+  padding-top: 13%;
   transition: all 0.3s ease-in-out;
 }
 
-/* .popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #06D85F;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-} */
 
-/* @media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
-} */
