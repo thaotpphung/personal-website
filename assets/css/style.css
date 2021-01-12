@@ -49,11 +49,11 @@ a:hover {
 }
 
 .job-logo {
-  width: 9rem;
+  width: 8rem;
 }
 
 /* -----------Set animation background-------------  */
-.layer-1,
+.background-animation,
 svg {
   position: absolute;
   top: 0px;
@@ -65,7 +65,7 @@ svg {
   height: 100vh;
 }
 
-.layer-2 {
+.window {
   position: absolute;
   top: 0px;
   left: 0px;
