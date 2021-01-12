@@ -1,3 +1,53 @@
+var sections = $("section"),
+  nav = $("nav");
+
+$(".layer-2").scroll(function () {
+  var screen = $(".layer-2")[0];
+  var curPos = screen.scrollTop;
+  if (curPos >= 20) {
+    nav.addClass("scrolled");
+  } else {
+    nav.removeClass("scrolled");
+  }
+
+  sections.each(function () {
+    // console.log($(this)[0].offsetTop);
+    var top = $(this)[0].offsetTop - $(".layer-2")[0].offsetTop;
+      bottom = top + $(this).outerHeight();
+      // console.log($(this).attr("id"));
+      // console.log('top', top);
+      // console.log('bottom', bottom);
+      // console.log('curr', curPos);
+    if (curPos >= top && curPos <= bottom) {
+      console.log($(this).attr("id"));
+      // $('a[href$="ABC"]').
+
+      let id = $(this).attr("id");
+
+      // console.log(nav.find("a").addClass("active"));
+      // console.log($('a[href="' + id + '"]').addClass("active"));
+
+      // console.log(nav.find('a[href$=$(this).attr("id")]'));
+      nav.find("a").removeClass("active");
+      nav.find('a[href="#' + $(this).attr("id") + '"]').addClass("active");
+    }
+  });
+
+
+});
+
+
+
+$('.navbar-nav li').click(function(){
+    $(this).addClass('active');
+})
+
+
+
+
+
+
+
 
 /* Background Animation */
 function init(showStats) {
@@ -67,7 +117,7 @@ var calcDelaunayTriangulation = (function () {
     return [
       [xCenter - 20 * maxDiff, yCenter - maxDiff],
       [xCenter, yCenter + 20 * maxDiff],
-      [xCenter + 20 * maxDiff, yCenter - maxDiff]
+      [xCenter + 20 * maxDiff, yCenter - maxDiff],
     ];
   }
   function circumcircle(vertices, i, j, k) {
@@ -120,7 +170,7 @@ var calcDelaunayTriangulation = (function () {
       k: k,
       x: xCenter,
       y: yCenter,
-      r: xDiff * xDiff + yDiff * yDiff
+      r: xDiff * xDiff + yDiff * yDiff,
     };
   }
   function dedupeEdges(edges) {
@@ -240,7 +290,7 @@ var tesselation = (function () {
       for (y = Math.floor(svgH / gridSize) + 1; y >= -1; y--) {
         vertices.push([
           xOffset + gridSize * (x + scatterAmount * (Math.random() - 0.5)),
-          yOffset + gridSize * (y + scatterAmount * (Math.random() - 0.5))
+          yOffset + gridSize * (y + scatterAmount * (Math.random() - 0.5)),
         ]);
       }
     }
@@ -291,7 +341,7 @@ var tesselation = (function () {
         for (i = n; i--; ) {
           TweenMax.to(toRemove.children[i], t * 0.4, {
             opacity: 0,
-            delay: t * ((0.3 * i) / n)
+            delay: t * ((0.3 * i) / n),
           });
         }
         TweenMax.delayedCall(
@@ -313,13 +363,13 @@ var tesselation = (function () {
           {
             opacity: 0.3 + 0.25 * Math.random(),
             delay: t * ((0.3 * i) / n + 0.3),
-            ease: Back.easeOut
+            ease: Back.easeOut,
           }
         );
       }
       svg.appendChild(g);
       prevGroup = g;
-    }
+    },
   };
 })();
 
@@ -366,12 +416,12 @@ var gradients = (function () {
       grad1 = {
         stopA: document.getElementById("stop1a"),
         stopB: document.getElementById("stop1b"),
-        rect: document.getElementById("rect1")
+        rect: document.getElementById("rect1"),
       };
       grad2 = {
         stopA: document.getElementById("stop2a"),
         stopB: document.getElementById("stop2b"),
-        rect: document.getElementById("rect2")
+        rect: document.getElementById("rect2"),
       };
       grad1.rect.style.opacity = 0;
       grad2.rect.style.opacity = 0;
@@ -390,11 +440,11 @@ var gradients = (function () {
       TweenMax.to(hide.rect, 0.55 * t, {
         opacity: 0,
         delay: 0.2 * t,
-        ease: Sine.easeOut
+        ease: Sine.easeOut,
       });
       assignRandomColors(show);
       TweenMax.to(show.rect, 0.65 * t, { opacity: 1, ease: Sine.easeIn });
-    }
+    },
   };
 })();
 

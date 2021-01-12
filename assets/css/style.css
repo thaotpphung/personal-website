@@ -77,7 +77,7 @@ svg polygon {
 }
 
 .navbar-nav .nav-link{
-  color: black !important;
+  color: black;
 }
 
 
@@ -86,8 +86,12 @@ svg polygon {
 }
 
 .navbar.scrolled {
-  background-color: rgb(208, 167, 192);
+  background-color: white;
   transition: background 1s;
+}
+
+.active {
+  color: #c55e77 !important;
 }
 
 /* About */
