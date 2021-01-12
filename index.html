@@ -36,7 +36,7 @@
 
 <body>
 	<div class="layer-1">
-		<svg id="demo" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+		<svg id="backgroundAnimation" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
 			<defs>
 				<linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0" color-interpolation="sRGB">
 					<stop id="stop1a" offset="0%" stop-color="#12a3b4"></stop>
@@ -56,7 +56,7 @@
 	</div>
 
 	<div class="layer-2">
-		<nav class="navbar navbar-light fixed-top navbar-expand-lg">
+		<!-- <nav class="navbar navbar-light fixed-top navbar-expand-lg">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -76,12 +76,46 @@
 					</li>
 				</ul>
 			</div>
-		</nav>
+		</nav> -->
+
+		
+		
+		<!-- <div class="card popup-card">
+			<div class="card-header">
+				Override Tracker 
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">A web-based system to track class override requests for 3 Truman departments</h5>
+				<ul style="padding: 0 20px;">
+					<li>Improved the manual processing of requests using Gmail and Excel by designing a user-friendly web interface, ex-pected to reduce human effort by 80%.</li>
+					<li>Responsible for gathering client’s requirements and developing frontend prototypes.</li>
+					<li>Collaborated with the backend team to design RESTful routes and MySQL tables</li>
+					<li>Employed MVC architecture in an agile environment.</li>
+				</ul>
+				
+				<span class="badge badge-pill badge-info">Node.js - Express.js</span>
+				<span class="badge badge-pill badge-info">MySQL</span>
+				<span class="badge badge-pill badge-info">Sequelize</span>
+				<span class="badge badge-pill badge-info">OAuth2</span>
+				
+				<span class="badge badge-pill badge-info">EJS</span>
+				<span class="badge badge-pill badge-info">Bootstrap4</span>
+				<span class="badge badge-pill badge-info">jQuery</span>
+				<span class="badge badge-pill badge-info">RESTful Routing</span>
+			</div>
+			<div class="card-footer text-muted">
+				<div class="float-right">
+					<a href="#" class="btn btn-primary">Github</a>
+					<a href="#" class="btn btn-dark">Close</a>
+				</div>
+			</div>
+		</div> -->
 
 		<!-- <div class="body-container"> -->
 		<section id="about">
+
 			<div class="text-center">
-				<div class="selfie scaleAnimation"></div>
+				<div class="selfie scale-animation"></div>
 				<p id="name" class="lead">
 					THAO PHUNG
 				</p>
@@ -120,7 +154,7 @@
 						<div class="pb-3">Expected Graduction in May 2021</div>
 						<a href="https://www.truman.edu/">
 							<img src="assets/img/truman_logo.png" alt="Truman State's logo" id="truman_logo"
-								class="scaleAnimation" />
+								class="scale-animation" />
 						</a>
 					</div>
 					<div class="col-12 col-md-8 pt-3 pt-md-0">
@@ -199,13 +233,13 @@
 					<div class="col-12 col-md-3 text-center pb-3 pb-md-0">
 						<a href="https://www.truman.edu/">
 							<img src="assets/img/truman_logo.png" alt="Truman State's logo" id="truman_logo"
-								class="scaleAnimation" />
+								class="scale-animation" />
 						</a>
 					</div>
 					<div class="col-12 col-md-3">
 						<b>Truman State University</b>
 						<div><i class="fas fa-map-marker-alt"></i> Kirksville, MO</div>
-						<div class="pb-3"><i class="fas fa-calendar-alt"></i> August 2019 - December 2019</div>
+						<div class="pb-3"><i class="fas fa-calendar-alt"></i> AUG 19 - DEC 19</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<b>Calculus Tutor</b>
@@ -213,10 +247,10 @@
 							<ul>
 								<li>
 									Provided assistance for students to tackle Calculus
-									problems
+									problems 
 								</li>
 								<li>
-									Worked with two other tutors to design a preparation test for all exams
+									Private Math tutor for SEE program - an education program to help incoming freshman
 								</li>
 							</ul>
 							<span class="badge badge-pill badge-info">Latex</span>
@@ -228,13 +262,13 @@
 					<div class="col-12 col-md-3 text-center pb-3 pb-md-0">
 						<a href="https://www.fpt-software.com/">
 							<img src="assets/img/fpt_logo.png" alt="FPT Software Vietnam's logo" id="fpt_logo"
-								class="scaleAnimation" />
+								class="scale-animation" />
 						</a>
 					</div>
 					<div class="col-12 col-md-3">
 						<b>FPT Software</b>
 						<div><i class="fas fa-map-marker-alt"></i> Hanoi, VN</div>
-						<div class="pb-3"><i class="fas fa-calendar-alt"></i> June 2019 - August 2019</div>
+						<div class="pb-3"><i class="fas fa-calendar-alt"></i> JUN 19 - AUG 19</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<b>Java Intern</b>
@@ -246,14 +280,15 @@
 									intensive training program.
 								</li>
 								<li>
-									Led team of four. tracked progress, finalized
-									projects, and submitted the final products to
+									Led team of four, tracked progress, finalized
+									projects, and submitted the final product to
 									project manager.
 								</li>
 							</ul>
 							<span class="badge badge-pill badge-info">Java Core</span>
 							<span class="badge badge-pill badge-info">SQL</span>
-							<span class="badge badge-pill badge-info">JDBC</span>
+							<span class="badge badge-pill badge-info">Spring Boot</span>
+							<span class="badge badge-pill badge-info">Hibernate</span>
 							<span class="badge badge-pill badge-info">HTML/CSS/Javascript</span>
 						</div>
 					</div>
@@ -267,21 +302,239 @@
 			<div class="container py-5">
 				<h2 class="text-center pb-5 section-title">Projects</h2>
 				<div class="row">
-					<div class="col-12 col-lg-6">
-						<div class="card scaleAnimation">
-							<a href="https://github.com/thaotpphung/stockapp" target="_blank">
+
+					<div class="col-12 col-lg-12">
+						<div class="CSSgal">
+
+							<!-- Don't wrap targets in parent -->
+							<s id="s1"></s> 
+							<s id="s2"></s>
+							<s id="s3"></s>
+							<s id="s4"></s>
+						
+							<div class="slider">
+
+								<!-- <a href="#popup1">
+									<div class="card project-card">
+										<img src="assets/img/stock.gif" class="card-img" alt="StockOverflow" />
+										<div class="card-body pb-0">
+											<h5 class="card-title">StockOverflow</h5>
+											<p class="card-text"> A web-based system to track class override requests for 3 Truman departments
+											</p>
+											<hr />
+											<span class="badge badge-pill badge-info">HTML</span>
+											<span class="badge badge-pill badge-info">CSS</span>
+											<span class="badge badge-pill badge-info">Javascript</span>
+											<span class="badge badge-pill badge-info">Nodejs</span>
+											<span class="badge badge-pill badge-info">Express</span>
+											<span class="badge badge-pill badge-info">MongoDB</span>
+											<span class="badge badge-pill badge-info">Bootstrap4</span>
+											<span class="badge badge-pill badge-info">jQuery</span>
+											<span class="badge badge-pill badge-info">Heroku</span>
+											<span class="badge badge-pill badge-info">REST API</span>
+										</div>
+								</a> -->
+
+								<div>
+									<a href="#popup1">
+										<div class="card project-card">
+											<img src="assets/img/stock.gif" class="card-img" alt="StockOverflow" />
+											<div class="card-body">
+												<h5 class="card-title">StockOverflow</h5>
+												<p class="card-text"> A web-based system to track class override requests for 3 Truman departments
+												</p>
+												<hr />
+												<span class="badge badge-pill badge-info">HTML</span>
+												<span class="badge badge-pill badge-info">CSS</span>
+												<span class="badge badge-pill badge-info">Javascript</span>
+												<span class="badge badge-pill badge-info">Nodejs</span>
+												<span class="badge badge-pill badge-info">Express</span>
+												<span class="badge badge-pill badge-info">MongoDB</span>
+												<span class="badge badge-pill badge-info">Bootstrap4</span>
+												<span class="badge badge-pill badge-info">jQuery</span>
+												<span class="badge badge-pill badge-info">Heroku</span>
+												<span class="badge badge-pill badge-info">REST API</span>
+											</div>
+										</div>
+									</a>
+								</div>
+								
+								<div>
+									<a href="#popup1">
+										<div class="card project-card">
+											<img src="assets/img/stock.gif" class="card-img" alt="StockOverflow" />
+											<div class="card-body">
+												<h5 class="card-title">StockOverflow</h5>
+												<p class="card-text"> A web-based system to track class override requests for 3 Truman departments
+												</p>
+												<hr />
+												<span class="badge badge-pill badge-info">HTML</span>
+												<span class="badge badge-pill badge-info">CSS</span>
+												<span class="badge badge-pill badge-info">Javascript</span>
+												<span class="badge badge-pill badge-info">Nodejs</span>
+												<span class="badge badge-pill badge-info">Express</span>
+												<span class="badge badge-pill badge-info">MongoDB</span>
+												<span class="badge badge-pill badge-info">Bootstrap4</span>
+												<span class="badge badge-pill badge-info">jQuery</span>
+												<span class="badge badge-pill badge-info">Heroku</span>
+												<span class="badge badge-pill badge-info">REST API</span>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div>
+									<a href="#popup1">
+										<div class="card project-card">
+											<img src="assets/img/stock.gif" class="card-img" alt="StockOverflow" />
+											<div class="card-body">
+												<h5 class="card-title">StockOverflow</h5>
+												<p class="card-text"> A web-based system to track class override requests for 3 Truman departments
+												</p>
+												<hr />
+												<span class="badge badge-pill badge-info">HTML</span>
+												<span class="badge badge-pill badge-info">CSS</span>
+												<span class="badge badge-pill badge-info">Javascript</span>
+												<span class="badge badge-pill badge-info">Nodejs</span>
+												<span class="badge badge-pill badge-info">Express</span>
+												<span class="badge badge-pill badge-info">MongoDB</span>
+												<span class="badge badge-pill badge-info">Bootstrap4</span>
+												<span class="badge badge-pill badge-info">jQuery</span>
+												<span class="badge badge-pill badge-info">Heroku</span>
+												<span class="badge badge-pill badge-info">REST API</span>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div>
+									<a href="#popup1">
+										<div class="card project-card">
+											<img src="assets/img/stock.gif" class="card-img" alt="StockOverflow" />
+											<div class="card-body">
+												<h5 class="card-title">StockOverflow</h5>
+												<p class="card-text"> A web-based system to track class override requests for 3 Truman departments
+												</p>
+												<hr />
+												<span class="badge badge-pill badge-info">HTML</span>
+												<span class="badge badge-pill badge-info">CSS</span>
+												<span class="badge badge-pill badge-info">Javascript</span>
+												<span class="badge badge-pill badge-info">Nodejs</span>
+												<span class="badge badge-pill badge-info">Express</span>
+												<span class="badge badge-pill badge-info">MongoDB</span>
+												<span class="badge badge-pill badge-info">Bootstrap4</span>
+												<span class="badge badge-pill badge-info">jQuery</span>
+												<span class="badge badge-pill badge-info">Heroku</span>
+												<span class="badge badge-pill badge-info">REST API</span>
+											</div>
+										</div>
+									</a>
+								</div>
+
+
+								<!-- <div class="card project-card">
+									<img src="assets/img/stock.gif" class="card-img" alt="StockOverflow" />
+									<div class="card-body pb-0">
+										<h5 class="card-title">StockOverflow</h5>
+										<p class="card-text"> A web-based system to track class override requests for 3 Truman departments
+										</p>
+										<hr />
+										<span class="badge badge-pill badge-info">HTML</span>
+										<span class="badge badge-pill badge-info">CSS</span>
+										<span class="badge badge-pill badge-info">Javascript</span>
+										<span class="badge badge-pill badge-info">Nodejs</span>
+										<span class="badge badge-pill badge-info">Express</span>
+										<span class="badge badge-pill badge-info">MongoDB</span>
+										<span class="badge badge-pill badge-info">Bootstrap4</span>
+										<span class="badge badge-pill badge-info">jQuery</span>
+										<span class="badge badge-pill badge-info">Heroku</span>
+										<span class="badge badge-pill badge-info">REST API</span>
+									</div>
+								</div> -->
+
+								<!-- <div class="card project-card">
+									<img src="assets/img/stock.gif" class="card-img" alt="StockOverflow" />
+									<div class="card-body pb-0">
+										<h5 class="card-title">StockOverflow</h5>
+										<p class="card-text"> A web-based system to track class override requests for 3 Truman departments
+										</p>
+										<hr />
+										<span class="badge badge-pill badge-info">HTML</span>
+										<span class="badge badge-pill badge-info">CSS</span>
+										<span class="badge badge-pill badge-info">Javascript</span>
+										<span class="badge badge-pill badge-info">Nodejs</span>
+										<span class="badge badge-pill badge-info">Express</span>
+										<span class="badge badge-pill badge-info">MongoDB</span>
+										<span class="badge badge-pill badge-info">Bootstrap4</span>
+										<span class="badge badge-pill badge-info">jQuery</span>
+										<span class="badge badge-pill badge-info">Heroku</span>
+										<span class="badge badge-pill badge-info">REST API</span>
+									</div>
+								</div> -->
+
+
+							</div>
+							
+							<div class="prevNext">
+								<div><a href="#s4"></a><a href="#s2"></a></div>
+								<div><a href="#s1"></a><a href="#s3"></a></div>
+								<div><a href="#s2"></a><a href="#s4"></a></div>
+								<div><a href="#s3"></a><a href="#s1"></a></div>
+							</div>
+						
+							<div class="bullets">
+								<a href="#s1">1</a>
+								<a href="#s2">2</a>
+								<a href="#s3">3</a>
+								<a href="#s4">4</a>
+							</div>
+						</div>
+					</div>
+
+					<div id="popup1" class="overlay">
+						<div class="popup">
+							<div class="card popup-card">
+								<div class="card-header">
+									Override Tracker 
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">A web-based system to track class override requests for 3 Truman departments</h5>
+									<ul style="padding: 0 20px;">
+										<li>Improved the manual processing of requests using Gmail and Excel by designing a user-friendly web interface, ex-pected to reduce human effort by 80%.</li>
+										<li>Responsible for gathering client’s requirements and developing frontend prototypes.</li>
+										<li>Collaborated with the backend team to design RESTful routes and MySQL tables</li>
+										<li>Employed MVC architecture in an agile environment.</li>
+									</ul>
+									
+									<span class="badge badge-pill badge-info">Node.js - Express.js</span>
+									<span class="badge badge-pill badge-info">MySQL</span>
+									<span class="badge badge-pill badge-info">Sequelize</span>
+									<span class="badge badge-pill badge-info">OAuth2</span>
+									
+									<span class="badge badge-pill badge-info">EJS</span>
+									<span class="badge badge-pill badge-info">Bootstrap4</span>
+									<span class="badge badge-pill badge-info">jQuery</span>
+									<span class="badge badge-pill badge-info">RESTful Routing</span>
+								</div>
+								<div class="card-footer text-muted">
+									<div class="float-right">
+										<a href="https://github.com/thaotpphung/stockoverflow" class="btn btn-primary">Github</a>
+										<a href="#" class="btn btn-dark">Close</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<!-- <div class="col-12 col-lg-12">
+						<div class="card project-card">
 								<img src="assets/img/stock.gif" class="card-img" alt="StockOverflow" />
 								<div class="card-body">
 									<h5 class="card-title">StockOverflow</h5>
-									<p class="card-text">
-										A RESTful web application using Node.js/Express to track and visualize stock
-										data,
-										manage stockportfolio and alert user of changes in stock prices.
-										Employed Bootstrap4 and JQuery for building the frontend, generated stock
-										graphs
-										via Chart.js and anychart.js libraries. Obtained stock data through financial
-										API.
-										Cached data in MongoDB database for optimization. Hosted on Heroku platform
+									<p class="card-text"> A web-based system to track class override requests for 3 Truman departments
 									</p>
 									<hr />
 									<span class="badge badge-pill badge-info">HTML</span>
@@ -295,12 +548,11 @@
 									<span class="badge badge-pill badge-info">Heroku</span>
 									<span class="badge badge-pill badge-info">REST API</span>
 								</div>
-							</a>
 						</div>
-					</div>
+					</div> -->
 
-					<div class="col-12 col-lg-6">
-						<div class="card scaleAnimation">
+					<!-- <div class="col-12 col-lg-6">
+						<div class="card scale-animation project-card">
 							<a href="https://github.com/thaotpphung/HAC" target="_blank">
 								<img src="assets/img/hac.png" class="card-img" alt="High Availability Cluster" />
 								<div class="card-body">
@@ -319,10 +571,10 @@
 								</div>
 							</a>
 						</div>
-					</div>
+					</div> -->
 
-					<div class="col-12 col-lg-6">
-						<div class="card scaleAnimation">
+					<!-- <div class="col-12 col-lg-6">
+						<div class="card scale-animation">
 							<a href="https://github.com/thaotpphung/directory-synchronization-tool"
 								target="_blank">
 								<img src="assets/img/sync.png" class="card-img"
@@ -340,9 +592,10 @@
 								</div>
 							</a>
 						</div>
-					</div>
-					<div class="col-12 col-lg-6">
-						<div class="card scaleAnimation">
+					</div> -->
+
+					<!-- <div class="col-12 col-lg-6">
+						<div class="card scale-animation">
 							<a href="https://github.com/thaotpphung/directory-synchronization-tool"
 								target="_blank">
 								<img src="assets/img/gomoku.png" class="card-img" alt="Gomoku" />
@@ -358,7 +611,8 @@
 								</div>
 							</a>
 						</div>
-					</div>
+					</div> -->
+
 				</div>
 		</section>
 

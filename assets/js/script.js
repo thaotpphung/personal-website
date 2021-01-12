@@ -1,4 +1,5 @@
 
+/* Background Animation */
 function init(showStats) {
   // stats
   if (showStats) {
@@ -14,7 +15,7 @@ function init(showStats) {
   }
 
   // init
-  var svg = document.getElementById("demo");
+  var svg = document.getElementById("backgroundAnimation");
   tesselation.setup(svg);
   gradients.setup();
 
@@ -37,9 +38,7 @@ function init(showStats) {
   window.requestAnimationFrame(tick);
 }
 
-//////////////////////////////
 // Delaunay Triangulation
-//////////////////////////////
 
 var calcDelaunayTriangulation = (function () {
   var EPSILON = 1.0 / 1048576.0;
@@ -324,9 +323,7 @@ var tesselation = (function () {
   };
 })();
 
-//////////////////////////////
 // Gradients
-//////////////////////////////
 
 var gradients = (function () {
   var grad1, grad2, showingGrad1;
@@ -401,8 +398,6 @@ var gradients = (function () {
   };
 })();
 
-//////////////////////////////
 // Start
-//////////////////////////////
 
 init();
