@@ -32,8 +32,6 @@
 
 	<!-- local css file -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/slider.css" />
-
 </head>
 
 <body>
@@ -58,6 +56,7 @@
 	</div>
 
 	<div class="window">
+
 		<nav class="navbar navbar-light fixed-top navbar-expand-lg">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
 				<span class="navbar-toggler-icon"></span>
@@ -80,9 +79,7 @@
 			</div>
 		</nav>
 
-		<!-- <div class="body-container"> -->
 		<section id="about">
-
 			<div class="text-center">
 				<div class="selfie scale-animation"></div>
 				<p class="name">
@@ -122,14 +119,13 @@
 						<b>Truman State University, Kirksville, MO</b>
 						<div class="pb-3">Expected Graduction in May 2021</div>
 						<a href="https://www.truman.edu/">
-							<img class="job-logo" src="assets/img/truman_logo.png" alt="Truman State's logo"
+							<img class="job-logo" src="assets/img/truman_logo.webp" alt="Truman State's logo"
 								id="truman_logo" class="scale-animation" />
 						</a>
 					</div>
 					<div class="col-12 col-md-8 pt-3 pt-md-0">
 						<b>Bachelor of Science in Computer Science and Minor in Mathematics</b>
 						<div>Relevant Coursework:</div>
-
 						<div id="coursework" class="row">
 							<div class="col-12 col-lg-7">
 								<ul>
@@ -196,7 +192,6 @@
 									<li>
 										Software Engineering
 									</li>
-
 								</ul>
 							</div>
 						</div>
@@ -211,7 +206,7 @@
 				<div class="row custom-card">
 					<div class="col-12 col-md-3 text-center pb-3 pb-md-0">
 						<a href="https://www.truman.edu/">
-							<img class="job-logo" src="assets/img/truman_logo.png" alt="Truman State's logo"
+							<img class="job-logo" src="assets/img/truman_logo.webp" alt="Truman State's logo"
 								id="truman_logo" class="scale-animation" />
 						</a>
 					</div>
@@ -242,7 +237,7 @@
 				<div class="row custom-card mt-4">
 					<div class="col-12 col-md-3 text-center pb-3 pb-md-0">
 						<a href="https://www.fpt-software.com/">
-							<img class="job-logo" src="assets/img/fpt_logo.png" alt="FPT Software Vietnam's logo"
+							<img class="job-logo" src="assets/img/fpt_logo.webp" alt="FPT Software Vietnam's logo"
 								id="fpt_logo" class="scale-animation" />
 						</a>
 					</div>
@@ -274,317 +269,297 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</section>
 
 
 		<section id="projects">
 			<div class="container py-5">
-				<h2 class="text-center section-title">Projects</h2>
 				<div class="row">
-
 					<div class="col-12 col-lg-10 col-centered">
-						<div class="slider-container">
+						<div class="text-center slide-container">
 
-							<s id="s1"></s>
-							<s id="s2"></s>
-							<s id="s3"></s>
-							<s id="s4"></s>
-
-							<div class="slider">
-
-								<div class="slide-container" id="1" onclick="togglePopup(this)">
-									<div class="card project-card">
-										<div class="card-header">
-											<h5>STOCKOVERFLOW</h5>
-										</div>
-										<img src="assets/img/stock.png" class="card-img" alt="StockOverflow" />
-										<div class="card-body">
-											<span class="badge badge-pill badge-info">Nodejs</span>
-											<span class="badge badge-pill badge-info">Express</span>
-											<span class="badge badge-pill badge-info">MongoDB</span>
-											<span class="badge badge-pill badge-info">Mongoose</span>
-											<span class="badge badge-pill badge-info">RESTful Routing</span>
-											<span class="badge badge-pill badge-info">MVC</span>
-											<span class="badge badge-pill badge-info">OAuth2</span>
-											<span class="badge badge-pill badge-info">EJS</span>
-											<span class="badge badge-pill badge-info">JQuery</span>
-											<span class="badge badge-pill badge-info">Chart.js</span>
-											<span class="badge badge-pill badge-info">Bootstrap4</span>
-											<span class="badge badge-pill badge-info">HTML/CSS/JS</span>
-											<span class="badge badge-pill badge-info">Heroku</span>
-										</div>
+							<div class="slide">
+								<div class="card project-card" id="1" onclick="togglePopup(this)">
+									<div class="card-header">
+										<h5>STOCKOVERFLOW</h5>
 									</div>
-								</div>
-
-								<div class="slide-container" id="2" onclick="togglePopup(this)">
-									<div class="card project-card">
-										<div class="card-header">
-											<strong>RGB WIZ</strong>
-										</div>
-										<img src="assets/img/rgb.png" class="card-img" alt="RGB" />
-										<div class="card-body">
-											<span class="badge badge-pill badge-info">REST APIs</span>
-											<span class="badge badge-pill badge-info">React</span>
-											<span class="badge badge-pill badge-info">Redux</span>
-											<span class="badge badge-pill badge-info">JWT</span>
-											<span class="badge badge-pill badge-info">Node.js</span>
-											<span class="badge badge-pill badge-info">Express</span>
-											<span class="badge badge-pill badge-info">MongoDB</span>
-											<span class="badge badge-pill badge-info">Socket.io</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="slide-container" id="3" onclick="togglePopup(this)">
-									<div class="card project-card">
-										<div class="card-header">
-											<strong>OVERRIDE TRACKER</strong>
-										</div>
-										<img src="assets/img/req.png" class="card-img" alt="override" />
-										<div class="card-body">
-											<span class="badge badge-pill badge-info">Nodejs</span>
-											<span class="badge badge-pill badge-info">Express</span>
-											<span class="badge badge-pill badge-info">MySQL</span>
-											<span class="badge badge-pill badge-info">Sequelize</span>
-											<span class="badge badge-pill badge-info">RESTful routing</span>
-											<span class="badge badge-pill badge-info">MVC</span>
-											<span class="badge badge-pill badge-info">OAuth2</span>
-											<span class="badge badge-pill badge-info">EJS</span>
-											<span class="badge badge-pill badge-info">Bootstrap4</span>
-											<span class="badge badge-pill badge-info">jQuery</span>
-											<span class="badge badge-pill badge-info">Heroku</span>
-											<span class="badge badge-pill badge-info">HTML/CSS/JS</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="slide-container" id="4" onclick="togglePopup(this)">
-									<div class="card project-card">
-										<div class="card-header">
-											<strong>DIR SYNC</strong>
-										</div>
-										<img src="assets/img/dir.png" class="card-img" alt="dir" />
-										<div class="card-body">
-											<span class="badge badge-pill badge-info">Java</span>
-											<span class="badge badge-pill badge-info">TCP</span>
-											<span class="badge badge-pill badge-info">OOP</span>
-											<span class="badge badge-pill badge-info">Client Server</span>
-											<span class="badge badge-pill badge-info">Multithreading</span>
-										</div>
+									<img src="assets/img/stock.webp" class="card-img" alt="StockOverflow" />
+									<div class="card-body">
+										<span class="badge badge-pill badge-info">Nodejs</span>
+										<span class="badge badge-pill badge-info">Express</span>
+										<span class="badge badge-pill badge-info">MongoDB</span>
+										<span class="badge badge-pill badge-info">Mongoose</span>
+										<span class="badge badge-pill badge-info">RESTful Routing</span>
+										<span class="badge badge-pill badge-info">MVC</span>
+										<span class="badge badge-pill badge-info">OAuth2</span>
+										<span class="badge badge-pill badge-info">EJS</span>
+										<span class="badge badge-pill badge-info">JQuery</span>
+										<span class="badge badge-pill badge-info">Chart.js</span>
+										<span class="badge badge-pill badge-info">Bootstrap4</span>
+										<span class="badge badge-pill badge-info">HTML/CSS/JS</span>
+										<span class="badge badge-pill badge-info">Heroku</span>
 									</div>
 								</div>
 							</div>
 
-							<div class="prevNext">
-								<div><a href="#s4"></a><a href="#s2"></a></div>
-								<div><a href="#s1"></a><a href="#s3"></a></div>
-								<div><a href="#s2"></a><a href="#s4"></a></div>
-								<div><a href="#s3"></a><a href="#s1"></a></div>
+							<div class="slide">
+								<div class="card project-card" id="2" onclick="togglePopup(this)">
+									<div class="card-header">
+										<h5>RGB WIZ</h5>
+									</div>
+									<img src="assets/img/rgb.webp" class="card-img" alt="RGB" />
+									<div class="card-body">
+										<span class="badge badge-pill badge-info">REST APIs</span>
+										<span class="badge badge-pill badge-info">React</span>
+										<span class="badge badge-pill badge-info">Redux</span>
+										<span class="badge badge-pill badge-info">JWT</span>
+										<span class="badge badge-pill badge-info">Node.js</span>
+										<span class="badge badge-pill badge-info">Express</span>
+										<span class="badge badge-pill badge-info">MongoDB</span>
+										<span class="badge badge-pill badge-info">Socket.io</span>
+									</div>
+								</div>
 							</div>
 
-							<div class="bullets">
-								<a href="#s1">1</a>
-								<a href="#s2">2</a>
-								<a href="#s3">3</a>
-								<a href="#s4">4</a>
+							<div class="slide">
+								<div class="card project-card" id="3" onclick="togglePopup(this)">
+									<div class="card-header">
+										<h5>OVERRIDE TRACKER</h5>
+									</div>
+									<img src="assets/img/req.webp" class="card-img" alt="override" />
+									<div class="card-body">
+										<span class="badge badge-pill badge-info">Nodejs</span>
+										<span class="badge badge-pill badge-info">Express</span>
+										<span class="badge badge-pill badge-info">MySQL</span>
+										<span class="badge badge-pill badge-info">Sequelize</span>
+										<span class="badge badge-pill badge-info">RESTful routing</span>
+										<span class="badge badge-pill badge-info">MVC</span>
+										<span class="badge badge-pill badge-info">OAuth2</span>
+										<span class="badge badge-pill badge-info">EJS</span>
+										<span class="badge badge-pill badge-info">Bootstrap4</span>
+										<span class="badge badge-pill badge-info">jQuery</span>
+										<span class="badge badge-pill badge-info">Heroku</span>
+										<span class="badge badge-pill badge-info">HTML/CSS/JS</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="slide">
+								<div class="card project-card">
+									<div class="card-header">
+										<strong>DIR SYNC</strong>
+									</div>
+									<img src="assets/img/dir.webp" class="card-img" alt="dir" />
+									<div class="card-body">
+										<span class="badge badge-pill badge-info">Java</span>
+										<span class="badge badge-pill badge-info">TCP</span>
+										<span class="badge badge-pill badge-info">OOP</span>
+										<span class="badge badge-pill badge-info">Client Server</span>
+										<span class="badge badge-pill badge-info">Multithreading</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="btn-container">
+								<span class="prev">
+									&#10094;
+								</span>
+								<span class="next">
+									&#10095;
+								</span>
+							</div>
+
+							<div class="dots">
+								<span class="dot activeDot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
 							</div>
 						</div>
-					</div>
 
-					<div class="popup" id="popup1">
-						<div class="overlay"></div>
-						<div class="content col-11 col-md-9 col-lg-6 col-centered">
-							<div>
-								<div class="popup">
-									<div class="card popup-card">
-										<div class="card-header">
-											A STOCK TRACKER AND VISUALIZER
-										</div>
-										<div class="card-body">
-											<ul style="padding: 0 20px;">
-												<li>Developed a web application to track stocks, manage portfolios and
-													visualize stock data; research the stock market (most active, most gainer, most loser,..) and set price alerts.</li>
-												<li>Utlized EJS template, jQuery, chart.js and Bootstrap to develop
-													interactive
-													charts and responsive web pages.</li>
-												<li>Fetched real-time stock information through FMP API and stored in
-													MongoDB
-													database.</li>
-												<li>Implemented OAuth2 authentication protocol with the help of the
-													Passport
-													library.</li>
-											</ul>
-											<span class="badge badge-pill badge-info">Nodejs</span>
-											<span class="badge badge-pill badge-info">Express</span>
-											<span class="badge badge-pill badge-info">MySQL</span>
-											<span class="badge badge-pill badge-info">Sequelize</span>
-											<span class="badge badge-pill badge-info">RESTful routing</span>
-											<span class="badge badge-pill badge-info">MVC</span>
-											<span class="badge badge-pill badge-info">OAuth2</span>
+						<div class="popup" id="popup1">
+							<div class="overlay"></div>
+							<div class="content col-11 col-md-9 col-lg-6 col-centered">
+								<div class="card popup-card">
+									<div class="card-header">
+										A STOCK TRACKER AND VISUALIZER
+									</div>
+									<div class="card-body">
+										<ul style="padding: 0 20px;">
+											<li>Developed a web application to track stocks, manage portfolios and
+												visualize stock data; research the stock market (most active, most gainer,
+												most loser,..) and set price alerts.</li>
+											<li>Utlized EJS template, jQuery, chart.js and Bootstrap to develop
+												interactive
+												charts and responsive web pages.</li>
+											<li>Fetched real-time stock information through FMP API and stored in
+												MongoDB
+												database.</li>
+											<li>Implemented OAuth2 authentication protocol with the help of the
+												Passport
+												library.</li>
+										</ul>
+										<span class="badge badge-pill badge-info">Nodejs</span>
+										<span class="badge badge-pill badge-info">Express</span>
+										<span class="badge badge-pill badge-info">MySQL</span>
+										<span class="badge badge-pill badge-info">Sequelize</span>
+										<span class="badge badge-pill badge-info">RESTful routing</span>
+										<span class="badge badge-pill badge-info">MVC</span>
+										<span class="badge badge-pill badge-info">OAuth2</span>
 
-											<span class="badge badge-pill badge-info">EJS</span>
-											<span class="badge badge-pill badge-info">Bootstrap4</span>
-											<span class="badge badge-pill badge-info">jQuery</span>
-											<span class="badge badge-pill badge-info">Heroku</span>
-											<span class="badge badge-pill badge-info">HTML/CSS/JS</span>
-										</div>
-										<div class="card-footer text-muted">
-											<div class="float-right">
-												<a href="https://github.com/thaotpphung/stockoverflow"
-													class="btn btn-primary">Github</a>
-												<div class="btn btn-dark" id="1" onclick="togglePopup(this)">Close</div>
-											</div>
+										<span class="badge badge-pill badge-info">EJS</span>
+										<span class="badge badge-pill badge-info">Bootstrap4</span>
+										<span class="badge badge-pill badge-info">jQuery</span>
+										<span class="badge badge-pill badge-info">Heroku</span>
+										<span class="badge badge-pill badge-info">HTML/CSS/JS</span>
+									</div>
+									<div class="card-footer text-muted">
+										<div class="float-right">
+											<a href="https://github.com/thaotpphung/stockoverflow"
+												class="btn btn-primary">Github</a>
+											<div class="btn btn-dark" id="1" onclick="togglePopup(this)">Close</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
 
-					<div class="popup" id="popup2">
-						<div class="overlay"></div>
-						<div class="content col-11 col-md-9 col-lg-6 col-centered">
-							<div>
-								<div class="popup">
-									<div class="card popup-card">
-										<div class="card-header">
-											<h5>AN RGB COLOR GUESSING GAME</h5>
-										</div>
-										<div class="card-body">
-											<ul style="padding: 0 20px;">
-												<li>Created a RESTful gaming website for players to guess correct color that
-													matches given RGB code, earn points and advances to next level.</li>
-												<li>
-													Developed frontend with React, managed states and avoided props drilling
-													with
-													Redux.
-												</li>
-												<li>
-													Performed CRUD actions on MongoDb database through REST APIs.
-												</li>
-												<li>
-													Used JWT and Passport to authenticate endpoints.
-												</li>
-												<li>
-													Applied Socket.IO library for displaying top three players’ scores in real
-													time.
-												</li>
-											</ul>
+						<div class="popup" id="popup2">
+							<div class="overlay"></div>
+							<div class="content col-11 col-md-9 col-lg-6 col-centered">
+								<div class="card popup-card">
+									<div class="card-header">
+										<h5>AN RGB COLOR GUESSING GAME</h5>
+									</div>
+									<div class="card-body">
+										<ul style="padding: 0 20px;">
+											<li>Created a RESTful gaming website for players to guess correct color that
+												matches given RGB code, earn points and advances to next level.</li>
+											<li>
+												Developed frontend with React, managed states and avoided props drilling
+												with
+												Redux.
+											</li>
+											<li>
+												Performed CRUD actions on MongoDb database through REST APIs.
+											</li>
+											<li>
+												Used JWT and Passport to authenticate endpoints.
+											</li>
+											<li>
+												Applied Socket.IO library for displaying top three players’ scores in real
+												time.
+											</li>
+										</ul>
 
-											<span class="badge badge-pill badge-info">REST APIs</span>
-											<span class="badge badge-pill badge-info">React</span>
-											<span class="badge badge-pill badge-info">Redux</span>
-											<span class="badge badge-pill badge-info">JWT</span>
-											<span class="badge badge-pill badge-info">Node.js</span>
-											<span class="badge badge-pill badge-info">Express</span>
-											<span class="badge badge-pill badge-info">MongoDB</span>
-											<span class="badge badge-pill badge-info">Socket.io</span>
-										</div>
-										<div class="card-footer text-muted">
-											<div class="float-right">
-												<a href="https://github.com/thaotpphung/RGB-wiz"
-													class="btn btn-primary">Github</a>
-												<div class="btn btn-dark" id="2" onclick="togglePopup(this)">Close</div>
-											</div>
+										<span class="badge badge-pill badge-info">REST APIs</span>
+										<span class="badge badge-pill badge-info">React</span>
+										<span class="badge badge-pill badge-info">Redux</span>
+										<span class="badge badge-pill badge-info">JWT</span>
+										<span class="badge badge-pill badge-info">Node.js</span>
+										<span class="badge badge-pill badge-info">Express</span>
+										<span class="badge badge-pill badge-info">MongoDB</span>
+										<span class="badge badge-pill badge-info">Socket.io</span>
+									</div>
+									<div class="card-footer text-muted">
+										<div class="float-right">
+											<a href="https://github.com/thaotpphung/RGB-wiz"
+												class="btn btn-primary">Github</a>
+											<div class="btn btn-dark" id="2" onclick="togglePopup(this)">Close</div>
 										</div>
 									</div>
 								</div>
+
 							</div>
 						</div>
-					</div>
 
-					<div class="popup" id="popup3">
-						<div class="overlay"></div>
-						<div class="content col-11 col-md-9 col-lg-6 col-centered">
-							<div>
-								<div class="popup">
-									<div class="card popup-card">
-										<div class="card-header">
-											<h5>A TRUMAN OVERRIDE REQUEST TRACKING SYSTEM</h5>
-										</div>
-										<div class="card-body">
-											<ul style="padding: 0 30px;">
-												<li>Designed a web-based system to aid administrators of Truman Computer Science, Mathematics and Statistics departments with class override requests</li>
-												<li>Improved the manual processing of requests using Gmail and Excel by
-													designing a user-friendly web interface, ex-pected to reduce human effort
-													by
-													80%.</li>
-												<li>Responsible for gathering client’s requirements and developing frontend
-													prototypes.</li>
-												<li>Collaborated with the backend team to design RESTful routes and MySQL
-													tables
-												</li>
-												<li>Employed MVC architecture in an agile environment.</li>
-											</ul>
-											<span class="badge badge-pill badge-info">Nodejs</span>
-											<span class="badge badge-pill badge-info">Express</span>
-											<span class="badge badge-pill badge-info">MySQL</span>
-											<span class="badge badge-pill badge-info">Sequelize</span>
-											<span class="badge badge-pill badge-info">RESTful routing</span>
-											<span class="badge badge-pill badge-info">MVC</span>
-											<span class="badge badge-pill badge-info">OAuth2</span>
+						<div class="popup" id="popup3">
+							<div class="overlay"></div>
+							<div class="content col-11 col-md-9 col-lg-6 col-centered">
+								<div class="card popup-card">
+									<div class="card-header">
+										<h5>A TRUMAN OVERRIDE REQUEST TRACKING SYSTEM</h5>
+									</div>
+									<div class="card-body">
+										<ul class="px-4">
+											<li>Designed a web-based system to aid administrators of Truman Computer
+												Science, Mathematics and Statistics departments with class override requests
+											</li>
+											<li>Improved the manual processing of requests using Gmail and Excel by
+												designing a user-friendly web interface, ex-pected to reduce human effort
+												by
+												80%.</li>
+											<li>Responsible for gathering client’s requirements and developing frontend
+												prototypes.</li>
+											<li>Collaborated with the backend team to design RESTful routes and MySQL
+												tables
+											</li>
+											<li>Employed MVC architecture in an agile environment.</li>
+										</ul>
+										<span class="badge badge-pill badge-info">Nodejs</span>
+										<span class="badge badge-pill badge-info">Express</span>
+										<span class="badge badge-pill badge-info">MySQL</span>
+										<span class="badge badge-pill badge-info">Sequelize</span>
+										<span class="badge badge-pill badge-info">RESTful routing</span>
+										<span class="badge badge-pill badge-info">MVC</span>
+										<span class="badge badge-pill badge-info">OAuth2</span>
 
-											<span class="badge badge-pill badge-info">EJS</span>
-											<span class="badge badge-pill badge-info">Bootstrap4</span>
-											<span class="badge badge-pill badge-info">jQuery</span>
-											<span class="badge badge-pill badge-info">Heroku</span>
-											<span class="badge badge-pill badge-info">HTML/CSS/JS</span>
-										</div>
-										<div class="card-footer text-muted">
-											<div class="float-right">
-												<a href="https://github.com/thaotpphung" class="btn btn-primary">Github</a>
-												<div class="btn btn-dark" id="3" onclick="togglePopup(this)">Close</div>
-											</div>
+										<span class="badge badge-pill badge-info">EJS</span>
+										<span class="badge badge-pill badge-info">Bootstrap4</span>
+										<span class="badge badge-pill badge-info">jQuery</span>
+										<span class="badge badge-pill badge-info">Heroku</span>
+										<span class="badge badge-pill badge-info">HTML/CSS/JS</span>
+									</div>
+									<div class="card-footer text-muted">
+										<div class="float-right">
+											<a href="https://github.com/thaotpphung" class="btn btn-primary">Github</a>
+											<div class="btn btn-dark" id="3" onclick="togglePopup(this)">Close</div>
 										</div>
 									</div>
 								</div>
+
 							</div>
 						</div>
-					</div>
 
-					<div class="popup" id="popup4">
-						<div class="overlay"></div>
-						<div class="content col-11 col-md-9 col-lg-6 col-centered">
-							<div>
-								<div class="popup">
-									<div class="card popup-card">
-										<div class="card-header">
-											A DIRECTORY SYNCHRONIZATION TOOL
-										</div>
-										<div class="card-body">
-											<ul style="padding: 0 20px;">
-												<li>
-													Built a desktop application to synchronize directories between two
-													computers, used as a backup tool.
-												</li>
-												<li>Applied Object-Oriented programming concepts to create file info,
-													client,
-													and server structures.</li>
-												<li>Utilized Java TCP class for reliable data transferring.</li>
-												<li>Usedmulti-threading mechanism for synchronously sending and receiving
-													multiplefiles, optimizing transferring time.</li>
-											</ul>
+						<div class="popup" id="popup4">
+							<div class="overlay"></div>
+							<div class="content col-11 col-md-9 col-lg-6 col-centered">
+								<div class="card popup-card">
+									<div class="card-header">
+										A DIRECTORY SYNCHRONIZATION TOOL
+									</div>
+									<div class="card-body">
+										<ul style="padding: 0 20px;">
+											<li>
+												Built a desktop application to synchronize directories between two
+												computers, used as a backup tool.
+											</li>
+											<li>Applied Object-Oriented programming concepts to create file info,
+												client,
+												and server structures.</li>
+											<li>Utilized Java TCP class for reliable data transferring.</li>
+											<li>Usedmulti-threading mechanism for synchronously sending and receiving
+												multiplefiles, optimizing transferring time.</li>
+										</ul>
 
-											<span class="badge badge-pill badge-info">Java</span>
-											<span class="badge badge-pill badge-info">TCP</span>
-											<span class="badge badge-pill badge-info">OOP</span>
-											<span class="badge badge-pill badge-info">Client Server</span>
-											<span class="badge badge-pill badge-info">Multithreading</span>
-										</div>
-										<div class="card-footer text-muted">
-											<div class="float-right">
-												<a href="https://github.com/thaotpphung" class="btn btn-primary">Github</a>
-												<div class="btn btn-dark" id="4" onclick="togglePopup(this)">Close</div>
-											</div>
+										<span class="badge badge-pill badge-info">Java</span>
+										<span class="badge badge-pill badge-info">TCP</span>
+										<span class="badge badge-pill badge-info">OOP</span>
+										<span class="badge badge-pill badge-info">Client Server</span>
+										<span class="badge badge-pill badge-info">Multithreading</span>
+									</div>
+									<div class="card-footer text-muted">
+										<div class="float-right">
+											<a href="https://github.com/thaotpphung" class="btn btn-primary">Github</a>
+											<div class="btn btn-dark" id="4" onclick="togglePopup(this)">Close</div>
 										</div>
 									</div>
 								</div>
+
 							</div>
 						</div>
-					</div>
 		</section>
 
 		<section id="footer">
@@ -602,24 +577,16 @@
 	</div>
 
 	<!-- Script for effects -->
-	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js'></script> -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
 
 	<!-- Optional JavaScript for Bootstrap-->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		crossorigin="anonymous"></script>
 
 
 	<!-- local javascript file -->
-	<script src="assets/js/animation.js"></script>
 	<script src="assets/js/script.js"></script>
 </body>
 
