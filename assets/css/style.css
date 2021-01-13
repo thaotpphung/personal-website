@@ -5,6 +5,7 @@
 
 body {
   font-family: "Lato", sans-serif !important;
+  background-color: rgb(242, 207, 245);
 }
 
 html {
@@ -170,32 +171,38 @@ svg polygon {
 }
 
 /* -----------Popup card-------------  */
-.popup-card {
-  border-radius: 5px;
-  background-color: white !important;
-  max-height: 700px;
-  overflow: scroll;
+.popup .overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
 }
 
-.overlay {
+.popup .content {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%) scale(0);
+  z-index:2;
+  box-sizing:border-box;
+  border-radius: 1%;
+  background-color: white;
 }
 
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
+.overlay .closebtn:hover {
+  color: #ccc;
 }
 
-.popup {
-  padding-top: 13%;
-  transition: all 0.3s ease-in-out;
+.popup.visible .overlay {
+  display:block;
 }
+
+.popup.visible .content {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+

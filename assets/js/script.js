@@ -17,3 +17,7 @@ $(".window").scroll(function () {
     }
   });
 });
+
+function togglePopup(element){
+  $('#popup' + $(element).attr("id")).toggleClass("visible");
+}

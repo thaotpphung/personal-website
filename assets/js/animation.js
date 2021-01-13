@@ -1,4 +1,3 @@
-/* Background Animation */
 function init(showStats) {
   // stats
   if (showStats) {
@@ -323,31 +322,13 @@ var tesselation = (function () {
 })();
 
 // Gradients
-
 var gradients = (function () {
   var grad1, grad2, showingGrad1;
-
-  // using colors from IBM Design Colors this time
   var colors = [
-    // 14 colors - use 3-5 span
-    // "#3c6df0", // ultramarine50
-    // "#12a3b4", // aqua40
-    // "#00a78f", // teal40
-    // "#00aa5e", // green40
-    // "#81b532", // lime30
-    // "#e3bc13", // yellow20
-    // "#ffb000", // gold20
-    // "#fe8500", // orange30
-    // "#fe6100", // peach40
-    // "#e62325", // red50
-    // "#dc267f", // magenta50 - strong pink
-    // "#c22dd5", // purple50
-    // "#9753e1", // violet50
-    // "#5a3ec8", // indigo60
-    // "#FFB6C1"
-    // "#33ECFF", // blue
+    // "#58CCED",
+    // "#3895D3", // blue
     "#df7cad", // pink
-    // "#ab75d2"
+    // "#71D0C5"
   ];
 
   function assignRandomColors(gradObj) {
