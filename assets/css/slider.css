@@ -3,9 +3,8 @@
 .slider-container {
 	position: relative;
 	overflow: hidden;
-	height: 100%; /* Or set a fixed height */
+	height: 100%; 
 }
-
 .slider-container .slider {
 	height: 100%;
 	white-space: nowrap;
@@ -14,7 +13,6 @@
 }
 
 /* SLIDES */
-
 .slider-container .slider > * {
 	font-size: 1rem;
 	display: inline-block;
@@ -41,7 +39,7 @@
 }
 
 .slider-container .prevNext a {
-	background: #fff;
+	background: rgb(240, 205, 205);
 	position: absolute;
 	width:       60px;
 	height:      60px;
@@ -109,7 +107,6 @@
 #s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
 
 /* SLIDER ANIMATION POSITIONS */
-
 #s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
 #s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
 #s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
