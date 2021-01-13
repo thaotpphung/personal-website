@@ -1,16 +1,16 @@
 /* ------ Nav Bar ---- */
-var sections = $("section"),
-  nav = $("nav");
+let sections = $("section"),
+    nav = $("nav");
 $(".window").scroll(function () {
-  var screen = $(".window")[0];
-  var curPos = screen.scrollTop;
+  let screen = $(".window")[0]; 
+  let curPos = screen.scrollTop;
   if (curPos >= 20) {
     nav.addClass("scrolled");
   } else {
     nav.removeClass("scrolled");
   }
   sections.each(function () {
-    var top = $(this)[0].offsetTop - $(".window")[0].offsetTop;
+    let top = $(this)[0].offsetTop - $(".window")[0].offsetTop;
     bottom = top + $(this).outerHeight();
     if (curPos >= top && curPos <= bottom) {
       nav.find("a").removeClass("active");
@@ -19,8 +19,8 @@ $(".window").scroll(function () {
   });
 });
 
+/* ------ Popup card ---- */
 function togglePopup(element) {
-  console.log("clicked");
   $("#popup" + $(element).attr("id")).toggleClass("visible");
 }
 
@@ -29,7 +29,7 @@ function togglePopup(element) {
 function init(showStats) {
   // stats
   if (showStats) {
-    var stats = new Stats();
+    let stats = new Stats();
     stats.domElement.style.position = "absolute";
     stats.domElement.style.left = "0";
     stats.domElement.style.top = "0";
@@ -41,11 +41,11 @@ function init(showStats) {
   }
 
   // init
-  var svg = document.getElementById("backgroundAnimation");
+  let svg = document.getElementById("backgroundAnimation");
   tesselation.setup(svg);
   gradients.setup();
 
-  var lastTransitionAt,
+  let lastTransitionAt,
     transitionDelay = 5000,
     transitionDuration = 4000;
 
@@ -66,10 +66,10 @@ function init(showStats) {
 
 // Delaunay Triangulation
 
-var calcDelaunayTriangulation = (function () {
-  var EPSILON = 1.0 / 1048576.0;
+let calcDelaunayTriangulation = (function () {
+  let EPSILON = 1.0 / 1048576.0;
   function getSuperT(vertices) {
-    var xMin = Number.POSITIVE_INFINITY,
+    let xMin = Number.POSITIVE_INFINITY,
       yMin = Number.POSITIVE_INFINITY,
       xMax = Number.NEGATIVE_INFINITY,
       yMax = Number.NEGATIVE_INFINITY,
@@ -97,7 +97,7 @@ var calcDelaunayTriangulation = (function () {
     ];
   }
   function circumcircle(vertices, i, j, k) {
-    var xI = vertices[i][0],
+    let xI = vertices[i][0],
       yI = vertices[i][1],
       xJ = vertices[j][0],
       yJ = vertices[j][1],
@@ -150,7 +150,7 @@ var calcDelaunayTriangulation = (function () {
     };
   }
   function dedupeEdges(edges) {
-    var i, j, a, b, m, n;
+    let i, j, a, b, m, n;
     for (j = edges.length; j; ) {
       b = edges[--j];
       a = edges[--j];
@@ -166,7 +166,7 @@ var calcDelaunayTriangulation = (function () {
     }
   }
   return function (vertices) {
-    var n = vertices.length,
+    let n = vertices.length,
       i,
       j,
       indices,
@@ -240,16 +240,16 @@ var calcDelaunayTriangulation = (function () {
   };
 })();
 
-var tesselation = (function () {
-  var svg, svgW, svgH, prevGroup;
+let tesselation = (function () {
+  let svg, svgW, svgH, prevGroup;
 
   function createRandomTesselation() {
-    var wW = window.innerWidth;
-    var wH = window.innerHeight;
+    let wW = window.innerWidth;
+    let wH = window.innerHeight;
 
-    var gridSpacing = 100,
+    let gridSpacing = 100,
       scatterAmount = 0.75;
-    var gridSize, i, x, y;
+    let gridSize, i, x, y;
 
     if (wW / wH > svgW / svgH) {
       // window wider than svg = use width for gridSize
@@ -259,8 +259,8 @@ var tesselation = (function () {
       gridSize = (gridSpacing * svgH) / wH;
     }
 
-    var vertices = [];
-    var xOffset = (svgW % gridSize) / 2,
+    let vertices = [];
+    let xOffset = (svgW % gridSize) / 2,
       yOffset = (svgH % gridSize) / 2;
     for (x = Math.floor(svgW / gridSize) + 1; x >= -1; x--) {
       for (y = Math.floor(svgH / gridSize) + 1; y >= -1; y--) {
@@ -271,10 +271,10 @@ var tesselation = (function () {
       }
     }
 
-    var triangles = calcDelaunayTriangulation(vertices);
+    let triangles = calcDelaunayTriangulation(vertices);
 
-    var group = document.createElementNS("http://www.w3.org/2000/svg", "g");
-    var polygon;
+    let group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    let polygon;
     for (i = triangles.length; i; ) {
       polygon = document.createElementNS(
         "http://www.w3.org/2000/svg",
@@ -303,12 +303,12 @@ var tesselation = (function () {
   return {
     setup: function (svgElement) {
       svg = svgElement;
-      var vb = svg.getAttribute("viewBox").split(/\D/g);
+      let vb = svg.getAttribute("viewBox").split(/\D/g);
       svgW = vb[2];
       svgH = vb[3];
     },
     next: function (t) {
-      var toRemove, i, n;
+      let toRemove, i, n;
       t /= 1000;
 
       if (prevGroup && prevGroup.children && prevGroup.children.length) {
@@ -329,7 +329,7 @@ var tesselation = (function () {
           this
         );
       }
-      var g = createRandomTesselation();
+      let g = createRandomTesselation();
       n = g.children.length;
       for (i = n; i--; ) {
         TweenMax.fromTo(
@@ -350,18 +350,18 @@ var tesselation = (function () {
 })();
 
 // Gradients
-var gradients = (function () {
-  var grad1, grad2, showingGrad1;
-  var colors = [
-    // "#58CCED",
-    "#3895D3", // blue
+let gradients = (function () {
+  let grad1, grad2, showingGrad1;
+  let colors = [
     "#df7cad", // pink
+    // "#3895D3", // blue
+    // "#58CCED",
     // "#71D0C5"
   ];
 
   function assignRandomColors(gradObj) {
-    var rA = Math.floor(colors.length * Math.random());
-    var rB = Math.floor(Math.random() * 3) + 3; // [3 - 5]
+    let rA = Math.floor(colors.length * Math.random());
+    let rB = Math.floor(Math.random() * 3) + 3; // [3 - 5]
     rB =
       (rA + rB * (Math.random() < 0.5 ? -1 : 1) + colors.length) %
       colors.length;
@@ -387,7 +387,7 @@ var gradients = (function () {
     },
     next: function (t) {
       t /= 1000;
-      var show, hide;
+      let show, hide;
       if (showingGrad1) {
         hide = grad1;
         show = grad2;
@@ -422,10 +422,10 @@ slides.forEach(function (slide, index) {
   slide.style.left = `${index * 100}%`;
 });
 
-var counter = 0;
+let counter = 0;
 
 function clearCounter() {
-  for (var i = 0; i < dots.length; i++) {
+  for (let i = 0; i < dots.length; i++) {
     dots[i].className = "dot";
   }
 }
@@ -457,11 +457,9 @@ dots.forEach(function (Element, index) {
 next.addEventListener("click", function () {
   counter++;
   carousel();
-  console.log(counter);
 });
 
 prev.addEventListener("click", function () {
   counter--;
   carousel();
-  console.log(counter);
 });

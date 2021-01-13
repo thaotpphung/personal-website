@@ -12,6 +12,10 @@ html {
   font-size: 100%;
 }
 
+.window {
+  scroll-behavior: smooth;    
+}
+
 /* -----------Common-------------  */
 .icon a i {
   font-size: 2rem;
