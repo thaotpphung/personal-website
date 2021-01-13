@@ -130,3 +130,7 @@
 	color: rgba(0,0,0,0.8);
 	text-decoration: none;
 }
+
+.slide-container {
+	padding-top: 6% !important;
+}
